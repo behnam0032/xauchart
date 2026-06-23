@@ -16,11 +16,11 @@ body{
 
 header{
   text-align:center;
-  padding:70px 20px 40px;
+  padding:60px 20px 30px;
 }
 
 h1{
-  font-size:48px;
+  font-size:42px;
   margin:0;
 }
 
@@ -30,36 +30,36 @@ h1{
 }
 
 .time{
-  margin-top:15px;
+  margin-top:12px;
   color:#60a5fa;
   font-size:14px;
 }
 
-/* GRID */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
-  padding:40px;
+  gap:18px;
+  padding:30px;
 }
 
-/* CARD */
 .card{
   background:#111a2e;
   border:1px solid #1f2a44;
   border-radius:14px;
-  padding:20px;
+  padding:18px;
   text-align:center;
 }
 
-/* BADGE */
+.card h3{
+  margin:0 0 10px;
+}
+
 .badge{
   display:inline-block;
-  margin-top:10px;
   padding:6px 12px;
   border-radius:8px;
-  font-size:13px;
   font-weight:bold;
+  font-size:13px;
 }
 
 .open{
@@ -74,19 +74,20 @@ h1{
 
 footer{
   text-align:center;
-  padding:30px;
+  padding:25px;
   color:#64748b;
   font-size:12px;
 }
 </style>
+
 </head>
 
 <body>
 
 <header>
   <h1>XAUChart</h1>
-  <div class="sub">وضعیت سشن‌های بازار طلا و فارکس</div>
-  <div class="time" id="time">ساعت UTC: --:--:--</div>
+  <div class="sub">وضعیت بازار طلا و سشن‌های فارکس</div>
+  <div class="time" id="time">UTC: --:--:--</div>
 </header>
 
 <section class="grid">
@@ -111,44 +112,19 @@ footer{
     <div id="sydney" class="badge">...</div>
   </div>
 
+  <!-- قیمت طلا -->
+  <div class="card">
+    <h3>قیمت طلا</h3>
+    <div id="gold">در حال دریافت...</div>
+  </div>
+
 </section>
 
 <footer>
-  © 2026 XAUChart | ابزار تحلیل بازار طلا
+  © 2026 XAUChart
 </footer>
 
-<script>
-function isOpen(start,end,h){
-  if(start < end){
-    return h >= start && h < end;
-  }
-  return h >= start || h < end;
-}
-
-function update(){
-  const now = new Date();
-  const h = now.getUTCHours();
-  const m = now.getUTCMinutes();
-  const s = now.getUTCSeconds();
-
-  document.getElementById("time").innerText =
-    `ساعت UTC: ${h.toString().padStart(2,'0')}:${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
-
-  set("london", isOpen(8,17,h));
-  set("newyork", isOpen(13,22,h));
-  set("tokyo", isOpen(0,9,h));
-  set("sydney", isOpen(22,7,h));
-}
-
-function set(id, open){
-  const el = document.getElementById(id);
-  el.className = open ? "badge open" : "badge closed";
-  el.innerText = open ? "باز" : "بسته";
-}
-
-update();
-setInterval(update,1000);
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
