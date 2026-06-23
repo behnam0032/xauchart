@@ -1,28 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>XAUChart | Gold Market Tools</title>
+<title>XAUChart | ابزار بازار طلا</title>
 
 <style>
 body{
   margin:0;
-  font-family: Arial, sans-serif;
+  font-family:Tahoma, Arial;
   background:#0b1220;
   color:#e5e7eb;
 }
 
-/* HEADER */
 header{
   text-align:center;
   padding:70px 20px 40px;
 }
 
 h1{
-  font-size:54px;
-  letter-spacing:2px;
+  font-size:48px;
   margin:0;
 }
 
@@ -31,11 +29,10 @@ h1{
   margin-top:10px;
 }
 
-/* LIVE TIME */
 .time{
   margin-top:15px;
-  font-size:14px;
   color:#60a5fa;
+  font-size:14px;
 }
 
 /* GRID */
@@ -43,7 +40,7 @@ h1{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:20px;
-  padding:40px 60px;
+  padding:40px;
 }
 
 /* CARD */
@@ -52,25 +49,16 @@ h1{
   border:1px solid #1f2a44;
   border-radius:14px;
   padding:20px;
-  transition:0.2s;
+  text-align:center;
 }
 
-.card:hover{
-  transform:translateY(-3px);
-  border-color:#2b3b63;
-}
-
-.card h3{
-  margin:0 0 10px;
-  font-size:18px;
-}
-
-/* STATUS BADGE */
+/* BADGE */
 .badge{
   display:inline-block;
-  padding:6px 10px;
+  margin-top:10px;
+  padding:6px 12px;
   border-radius:8px;
-  font-size:12px;
+  font-size:13px;
   font-weight:bold;
 }
 
@@ -84,12 +72,11 @@ h1{
   color:#f87171;
 }
 
-/* FOOTER */
 footer{
   text-align:center;
-  padding:40px;
+  padding:30px;
   color:#64748b;
-  font-size:13px;
+  font-size:12px;
 }
 </style>
 </head>
@@ -97,41 +84,41 @@ footer{
 <body>
 
 <header>
-  <h1>XAUCHART</h1>
-  <div class="sub">Gold Trading Market Sessions Dashboard</div>
-  <div class="time" id="time">UTC Time: --:--:--</div>
+  <h1>XAUChart</h1>
+  <div class="sub">وضعیت سشن‌های بازار طلا و فارکس</div>
+  <div class="time" id="time">ساعت UTC: --:--:--</div>
 </header>
 
 <section class="grid">
 
   <div class="card">
-    <h3>London</h3>
+    <h3>لندن</h3>
     <div id="london" class="badge">...</div>
   </div>
 
   <div class="card">
-    <h3>New York</h3>
+    <h3>نیویورک</h3>
     <div id="newyork" class="badge">...</div>
   </div>
 
   <div class="card">
-    <h3>Tokyo</h3>
+    <h3>توکیو</h3>
     <div id="tokyo" class="badge">...</div>
   </div>
 
   <div class="card">
-    <h3>Sydney</h3>
+    <h3>سیدنی</h3>
     <div id="sydney" class="badge">...</div>
   </div>
 
 </section>
 
 <footer>
-  © 2026 XAUChart — Trading Tools
+  © 2026 XAUChart | ابزار تحلیل بازار طلا
 </footer>
 
 <script>
-function isOpen(start, end, h){
+function isOpen(start,end,h){
   if(start < end){
     return h >= start && h < end;
   }
@@ -145,29 +132,22 @@ function update(){
   const s = now.getUTCSeconds();
 
   document.getElementById("time").innerText =
-    `UTC Time: ${h.toString().padStart(2,'0')}:${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
+    `ساعت UTC: ${h.toString().padStart(2,'0')}:${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
 
-  const sessions = {
-    london: isOpen(8,17,h),
-    newyork: isOpen(13,22,h),
-    tokyo: isOpen(0,9,h),
-    sydney: isOpen(22,7,h)
-  };
-
-  setBadge("london", sessions.london);
-  setBadge("newyork", sessions.newyork);
-  setBadge("tokyo", sessions.tokyo);
-  setBadge("sydney", sessions.sydney);
+  set("london", isOpen(8,17,h));
+  set("newyork", isOpen(13,22,h));
+  set("tokyo", isOpen(0,9,h));
+  set("sydney", isOpen(22,7,h));
 }
 
-function setBadge(id, open){
+function set(id, open){
   const el = document.getElementById(id);
   el.className = open ? "badge open" : "badge closed";
-  el.innerText = open ? "OPEN" : "CLOSED";
+  el.innerText = open ? "باز" : "بسته";
 }
 
 update();
-setInterval(update, 1000);
+setInterval(update,1000);
 </script>
 
 </body>
