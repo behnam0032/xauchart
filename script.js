@@ -1,55 +1,81 @@
-function isOpen(start, end, h){
-  if(start < end){
-    return h >= start && h < end;
-  }
-  return h >= start || h < end;
+function isOpen(start, end, hour) {
+    if (start < end) {
+        return hour >= start && hour < end;
+    }
+    return hour >= start || hour < end;
 }
 
-/* آپدیت سشن‌ها + ساعت */
-function updateSessions(){
-  const now = new Date();
-  const h = now.getUTCHours();
-  const m = now.getUTCMinutes();
-  const s = now.getUTCSeconds();
+function setStatus(id, open) {
 
-  document.getElementById("time").innerText =
-    `UTC: ${h.toString().padStart(2,'0')}:${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
+    const el = document.getElementById(id);
 
-  setBadge("london", isOpen(8,17,h));
-  setBadge("newyork", isOpen(13,22,h));
-  setBadge("tokyo", isOpen(0,9,h));
-  setBadge("sydney", isOpen(22,7,h));
+    if (open) {
+        el.className = "status open";
+        el.innerText = "باز";
+    } else {
+        el.className = "status closed";
+        el.innerText = "بسته";
+    }
 }
 
-function setBadge(id, open){
-  const el = document.getElementById(id);
-  el.className = open ? "badge open" : "badge closed";
-  el.innerText = open ? "باز" : "بسته";
+function updateSessions() {
+
+    const now = new Date();
+
+    const h = now.getUTCHours();
+    const m = now.getUTCMinutes();
+    const s = now.getUTCSeconds();
+
+    document.getElementById("utc-clock").innerText =
+        `UTC : ${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+
+    setStatus("london", isOpen(8, 17, h));
+    setStatus("newyork", isOpen(13, 22, h));
+    setStatus("tokyo", isOpen(0, 9, h));
+    setStatus("sydney", isOpen(22, 7, h));
 }
 
-/* گرفتن قیمت طلا از API */
-async function getGoldPrice(){
-  try {
-    const res = await fetch("https://www.goldapi.io/api/XAU/USD", {
-      headers: {
-        "x-access-token": "goldapi-d13adb24a64de6a8e35438642e102382-io"
-      }
-    });
+async function getGoldPrice() {
 
-    const data = await res.json();
+    try {
 
-    document.getElementById("gold").innerText =
-      "طلا: " + data.price + " دلار";
+        const response = await fetch(
+            "https://www.goldapi.io/api/XAU/USD",
+            {
+                method: "GET",
+                headers: {
+                    "x-access-token": "goldapi-d13adb24a64de6a8e35438642e102382-io",
+                    "Content-Type": "application/json"
+                }
+            }
+        );
 
-  } catch (e) {
-    document.getElementById("gold").innerText =
-      "خطا در دریافت قیمت";
-  }
+        if (!response.ok) {
+            throw new Error(`HTTP Error ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        console.log(data);
+
+        document.getElementById("gold-price").innerText =
+            `${data.price} USD`;
+
+    } catch (error) {
+
+        console.error(error);
+
+        document.getElementById("gold-price").innerText =
+            "خطا در دریافت قیمت";
+    }
 }
 
-/* اجرا */
+/* اجرای اولیه */
+
 updateSessions();
-setInterval(updateSessions, 1000);
-
 getGoldPrice();
+
+/* بروزرسانی‌ها */
+
+setInterval(updateSessions, 1000);
 setInterval(getGoldPrice, 10000);
