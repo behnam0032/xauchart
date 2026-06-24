@@ -39,20 +39,20 @@ async function getGoldPrice() {
 
     try {
         console.log("start")
-        var myHeaders = new Headers();
-myHeaders.append("x-access-token", "goldapi-d13adb24a64de6a8e35438642e102382-io");
-myHeaders.append("Content-Type", "application/json");
+//         var myHeaders = new Headers();
+// myHeaders.append("x-access-token", "goldapi-d13adb24a64de6a8e35438642e102382-io");
+// myHeaders.append("Content-Type", "application/json");
 
-var requestOptions = {
-  method: 'GET',
-  headers: myHeaders,
-  redirect: 'follow'
-};
+// var requestOptions = {
+//   method: 'GET',
+//   headers: myHeaders,
+//   redirect: 'follow'
+// };
 
-fetch("https://www.goldapi.io/api/XAU/USD", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
+// fetch("https://www.goldapi.io/api/XAU/USD", requestOptions)
+//   .then(response => response.text())
+//   .then(result => console.log(result))
+//   .catch(error => console.log('error', error));
 
     } catch (e) {
         console.error(e);
