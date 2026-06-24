@@ -44,29 +44,15 @@ async function getGoldPrice() {
             {
                 method: "GET",
                 headers: {
-                    "x-access-token": "goldapi-d13adb24a64de6a8e35438642e102382-io",
-                    "Content-Type": "application/json"
+                    "x-access-token": "goldapi-d13adb24a64de6a8e35438642e102382-io"
                 }
             }
         );
 
-        if (!response.ok) {
-            throw new Error(`HTTP Error ${response.status}`);
-        }
+        console.log(response);
 
-        const data = await response.json();
-
-        console.log(data);
-
-        document.getElementById("gold-price").innerText =
-            `${data.price} USD`;
-
-    } catch (error) {
-
-        console.error(error);
-
-        document.getElementById("gold-price").innerText =
-            "خطا در دریافت قیمت";
+    } catch (e) {
+        console.error(e);
     }
 }
 
