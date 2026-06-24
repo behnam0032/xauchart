@@ -38,7 +38,7 @@ function updateSessions() {
 async function getGoldPrice() {
 
     try {
-
+        console.log("start")
         var myHeaders = new Headers();
 myHeaders.append("x-access-token", "goldapi-d13adb24a64de6a8e35438642e102382-io");
 myHeaders.append("Content-Type", "application/json");
