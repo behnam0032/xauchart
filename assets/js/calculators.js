@@ -2,6 +2,86 @@ function formatNumber(num){
 return Number(num).toLocaleString("fa-IR");
 }
 
+
+function calculateXauLotSize(){
+
+const balance =
+parseFloat(
+document.getElementById("balance").value
+);
+
+const risk =
+parseFloat(
+document.getElementById("risk").value
+);
+
+const entry =
+parseFloat(
+document.getElementById("entry").value
+);
+
+const stop =
+parseFloat(
+document.getElementById("stop").value
+);
+
+if(
+!balance ||
+!risk ||
+!entry ||
+!stop
+){
+return;
+}
+
+const riskAmount =
+balance * (risk / 100);
+
+const stopDistance =
+Math.abs(entry - stop);
+
+const lotSize =
+riskAmount /
+(stopDistance * 100);
+
+document.getElementById("result")
+.innerHTML =
+
+`
+<div class="result-item">
+
+<b>ریسک دلاری:</b>
+
+${formatNumber(
+riskAmount.toFixed(2)
+)} $
+
+</div>
+
+<div class="result-item">
+
+<b>فاصله استاپ:</b>
+
+${stopDistance.toFixed(2)}
+
+</div>
+
+<div class="result-item">
+
+<b>حجم معامله:</b>
+
+${lotSize.toFixed(2)} Lot
+
+</div>
+`;
+
+}
+
+
+
+
+
+
 function calculateLot(){
 
 const balance=parseFloat(document.getElementById("balance").value);
