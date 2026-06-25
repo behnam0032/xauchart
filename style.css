@@ -212,3 +212,26 @@ color:#e5e7eb;
 .nav-item.active:visited{
 color:#111827;
 }
+
+@media (max-width:768px){
+
+.main-nav{
+gap:6px;
+padding:10px;
+}
+
+.nav-item{
+
+min-width:auto;
+
+padding:8px 10px;
+
+font-size:12px;
+
+border-radius:10px;
+
+flex:1 1 calc(50% - 6px);
+
+}
+
+}
