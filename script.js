@@ -114,7 +114,7 @@ async function loadMarket() {
         // CRYPTO
 
         const usdt =
-            findSymbol(crypto, "USDT");
+            findSymbol(crypto, "USDT_IRT");
 
         // نمایش
 
