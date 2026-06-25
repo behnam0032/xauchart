@@ -1,49 +1,152 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-  margin:0;
-  font-family:Arial;
-  background:#0f172a;
-  color:white;
+background:#0b1220;
+color:white;
+font-family:tahoma,sans-serif;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
 }
 
 header{
-  text-align:center;
-  padding:80px 20px;
+text-align:center;
+padding:40px 0;
 }
 
-h1{
-  font-size:50px;
+header h1{
+font-size:48px;
+margin-bottom:10px;
 }
 
-p{
-  color:#cbd5e1;
+.subtitle{
+color:#94a3b8;
 }
 
-.buttons a{
-  display:inline-block;
-  margin-top:20px;
-  padding:12px 20px;
-  background:#f59e0b;
-  color:black;
-  text-decoration:none;
-  border-radius:8px;
-  font-weight:bold;
+#utc-clock{
+margin-top:15px;
+font-size:18px;
+color:#60a5fa;
 }
 
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-  padding:50px;
+.section-title{
+margin:25px 0;
+text-align:center;
+font-size:24px;
 }
 
-.card{
-  background:#1e293b;
-  padding:20px;
-  border-radius:12px;
+.session-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+}
+
+.session-card{
+background:#111827;
+padding:20px;
+border-radius:16px;
+text-align:center;
+border:1px solid #1e293b;
+}
+
+.hero-card{
+margin:35px 0;
+padding:40px;
+border-radius:20px;
+background:linear-gradient(
+135deg,
+#111827,
+#1e293b
+);
+text-align:center;
+border:1px solid #334155;
+}
+
+.hero-price{
+font-size:58px;
+font-weight:700;
+color:#fbbf24;
+margin-top:15px;
+}
+
+.hero-unit{
+margin-top:10px;
+color:#94a3b8;
+}
+
+.market-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+}
+
+.small-card{
+background:#111827;
+padding:20px;
+border-radius:16px;
+text-align:center;
+border:1px solid #1e293b;
+transition:0.3s;
+}
+
+.small-card:hover{
+transform:translateY(-4px);
+}
+
+.small-card h3{
+font-size:15px;
+color:#94a3b8;
+margin-bottom:10px;
+}
+
+.small-price{
+font-size:24px;
+font-weight:bold;
+}
+
+.status{
+padding:8px 15px;
+border-radius:8px;
+display:inline-block;
+font-weight:bold;
+}
+
+.open{
+background:#064e3b;
+color:#4ade80;
+}
+
+.closed{
+background:#450a0a;
+color:#f87171;
 }
 
 footer{
-  text-align:center;
-  padding:30px;
-  color:#94a3b8;
+margin-top:40px;
+padding:20px;
+text-align:center;
+color:#94a3b8;
+}
+
+@media(max-width:768px){
+
+.session-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.market-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.hero-price{
+font-size:40px;
+}
+
 }
