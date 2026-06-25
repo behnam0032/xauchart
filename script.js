@@ -53,7 +53,7 @@ async function loadMarket(){
         const response=await fetch(API_URL);
 
         const data=await response.json();
-
+        console.log(data)
         const xau=data.gold.find(i=>i.symbol==="XAUUSD");
         const gold18=data.gold.find(i=>i.symbol==="IR_GOLD_18K");
         const melted=data.gold.find(i=>i.symbol==="IR_GOLD_MELTED");
