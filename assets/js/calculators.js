@@ -1,5 +1,5 @@
 function formatNumber(num){
-return Number(num).toLocaleString("fa-IR");
+return Number(num).toLocaleString("en-US");
 }
 
 
