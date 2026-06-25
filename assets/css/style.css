@@ -32,30 +32,63 @@ margin-top:10px;
 color:#94a3b8;
 }
 
-nav{
-margin:25px 0;
-}
-
-.nav-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+.main-nav{
+display:flex;
+flex-wrap:wrap;
 gap:10px;
+justify-content:center;
+margin-top:25px;
+margin-bottom:25px;
 }
 
-.nav-grid a{
-background:#111827;
-padding:15px;
-border-radius:12px;
+.nav-item{
+
 text-decoration:none;
-color:white;
-text-align:center;
+
+background:#111827;
+
+color:#d1d5db;
+
+padding:12px 18px;
+
+border-radius:12px;
+
 border:1px solid #1f2937;
-transition:.3s;
+
+transition:.25s;
+
+font-size:14px;
+
+font-weight:600;
 }
 
-.nav-grid a:hover{
+.nav-item:hover{
+
 background:#1e293b;
+
+color:#fff;
+
+transform:translateY(-2px);
+
 }
+
+.nav-item.active{
+
+background:#f59e0b;
+
+color:#000;
+
+border-color:#f59e0b;
+
+box-shadow:
+0 0 15px rgba(245,158,11,.4);
+
+}
+
+
+
+
+
 
 .card{
 background:#111827;
