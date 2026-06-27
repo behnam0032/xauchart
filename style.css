@@ -129,6 +129,7 @@ grid-template-columns:repeat(2,1fr);
 .hero-price{
 font-size:40px;
 }
+}
 
 .tools-grid{
 display:grid;
