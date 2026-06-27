@@ -397,6 +397,23 @@ async function loadMarket() {
     }
 
 }
+function updateUTCClock(){
+
+    const clock=document.getElementById("utc-clock");
+
+    if(!clock) return;
+
+    const now=new Date();
+
+    const h=String(now.getUTCHours()).padStart(2,"0");
+
+    const m=String(now.getUTCMinutes()).padStart(2,"0");
+
+    const s=String(now.getUTCSeconds()).padStart(2,"0");
+
+    clock.innerHTML=`${h}:${m}:${s} UTC`;
+
+}
 
 /* ===========================
    شروع برنامه
@@ -406,20 +423,17 @@ updateSessions();
 
 loadMarket();
 
+updateUTCClock();
+
+
 /* ===========================
    تایمرها
 =========================== */
 
 // شمارش معکوس هر ثانیه
-setInterval(() => {
-
-    updateSessions();
-
-}, 1000);
+setInterval(() => {updateSessions();}, 1000);
 
 // دریافت قیمت هر دقیقه
-setInterval(() => {
+setInterval(() => {loadMarket();}, 60000);
 
-    loadMarket();
-
-}, 60000);
+setInterval(updateUTCClock,1000);
