@@ -70,35 +70,55 @@
 </a>
 
 </section>
-<section>
+<section class="market-session-box">
 
-<h2 class="section-title">
-وضعیت سشن‌های بازار
-</h2>
+    <div class="session-header">
 
-<div class="session-grid">
+        <h2>سشن‌های بازار فارکس</h2>
 
-<div class="session-card">
-<h3>لندن</h3>
-<div id="london"></div>
-</div>
+        <div id="marketStatus" class="market-status">
+            در حال بررسی...
+        </div>
 
-<div class="session-card">
-<h3>نیویورک</h3>
-<div id="newyork"></div>
-</div>
+    </div>
 
-<div class="session-card">
-<h3>توکیو</h3>
-<div id="tokyo"></div>
-</div>
+    <div id="nextOpenBox" class="next-open">
 
-<div class="session-card">
-<h3>سیدنی</h3>
-<div id="sydney"></div>
-</div>
+        <span>بازگشایی بعدی</span>
 
-</div>
+        <strong id="nextOpenTime">
+            --
+        </strong>
+
+        <div id="countdown">
+            --
+        </div>
+
+    </div>
+
+    <div class="sessions-grid">
+
+        <div class="session-card" id="sydneyCard">
+            <h3>🇦🇺 سیدنی</h3>
+            <span id="sydneyStatus">--</span>
+        </div>
+
+        <div class="session-card" id="tokyoCard">
+            <h3>🇯🇵 توکیو</h3>
+            <span id="tokyoStatus">--</span>
+        </div>
+
+        <div class="session-card" id="londonCard">
+            <h3>🇬🇧 لندن</h3>
+            <span id="londonStatus">--</span>
+        </div>
+
+        <div class="session-card" id="newYorkCard">
+            <h3>🇺🇸 نیویورک</h3>
+            <span id="newYorkStatus">--</span>
+        </div>
+
+    </div>
 
 </section>
 
