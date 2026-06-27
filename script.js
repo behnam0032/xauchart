@@ -56,23 +56,147 @@ function checkOpen(start, end, hour) {
     return hour >= start || hour < end;
 }
 
-function updateSessions() {
+function updateSessions(){
 
-    const now = new Date();
+const now=new Date();
 
-    const h = now.getUTCHours();
-    const m = now.getUTCMinutes();
-    const s = now.getUTCSeconds();
+const day=now.getUTCDay();
 
-    document.getElementById("utc-clock").innerText =
-        `UTC ${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+const hour=now.getUTCHours()+now.getUTCMinutes()/60;
 
-    setStatus("london", checkOpen(8, 17, h));
-    setStatus("newyork", checkOpen(13, 22, h));
-    setStatus("tokyo", checkOpen(0, 9, h));
-    setStatus("sydney", checkOpen(22, 7, h));
+let marketClosed=false;
+
+
+
+if(day===6){
+
+marketClosed=true;
+
 }
 
+if(day===0 && hour<21){
+
+marketClosed=true;
+
+}
+
+if(day===5 && hour>=22){
+
+marketClosed=true;
+
+}
+
+
+
+if(marketClosed){
+
+document.getElementById("marketStatus").innerHTML="🔴 بازار فارکس تعطیل است";
+
+document.getElementById("marketStatus").className="market-status market-close";
+
+closeAll();
+
+nextOpenCountdown();
+
+return;
+
+}
+
+
+
+document.getElementById("marketStatus").innerHTML="🟢 بازار باز است";
+
+document.getElementById("marketStatus").className="market-status market-open";
+
+
+
+updateSession("sydney",hour>=21||hour<6);
+
+updateSession("tokyo",hour>=23||hour<8);
+
+updateSession("london",hour>=7&&hour<16);
+
+updateSession("newYork",hour>=12&&hour<21);
+
+}
+
+function closeAll(){
+
+["sydney","tokyo","london","newYork"].forEach(name=>{
+
+document.getElementById(name+"Status").innerHTML="بسته";
+
+document.getElementById(name+"Card").className="session-card closed";
+
+});
+
+}
+
+function updateSession(name,isOpen){
+
+const card=document.getElementById(name+"Card");
+
+const status=document.getElementById(name+"Status");
+
+if(isOpen){
+
+status.innerHTML="🟢 باز";
+
+card.className="session-card active";
+
+}else{
+
+status.innerHTML="🔴 بسته";
+
+card.className="session-card";
+
+}
+
+}
+function nextOpenCountdown(){
+
+const now=new Date();
+
+let target=new Date(now);
+
+target.setUTCHours(21,0,0,0);
+
+// اگر شنبه است، بازگشایی یکشنبه
+if(now.getUTCDay()===6){
+
+target.setUTCDate(now.getUTCDate()+1);
+
+}
+
+// اگر یکشنبه قبل از 21 است
+else if(now.getUTCDay()===0 && now.getUTCHours()<21){
+
+}
+
+// اگر جمعه بعد از بسته شدن
+else{
+
+let days=(7-now.getUTCDay())%7;
+
+if(days===0) days=7;
+
+target.setUTCDate(now.getUTCDate()+days);
+
+}
+
+const diff=target-now;
+
+const h=Math.floor(diff/1000/60/60);
+
+const m=Math.floor(diff/1000/60)%60;
+
+const s=Math.floor(diff/1000)%60;
+
+document.getElementById("nextOpenTime").innerHTML="یکشنبه 21:00 UTC";
+
+document.getElementById("countdown").innerHTML=`${h}h ${m}m ${s}s`;
+
+}
 async function loadMarket() {
 
     try {
