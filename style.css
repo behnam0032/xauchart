@@ -36,25 +36,6 @@ font-size:18px;
 color:#60a5fa;
 }
 
-.section-title{
-margin:25px 0;
-text-align:center;
-font-size:24px;
-}
-
-.session-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:15px;
-}
-
-.session-card{
-background:#111827;
-padding:20px;
-border-radius:16px;
-text-align:center;
-border:1px solid #1e293b;
-}
 
 .hero-card{
 margin:35px 0;
@@ -185,61 +166,75 @@ font-size:14px;
 line-height:1.7;
 }
 
-.market-session-box{
+.sessions-section{
 
-margin-top:30px;
-
-padding:25px;
-
-background:#171717;
-
-border-radius:18px;
+margin:70px 0;
 
 }
 
-.session-header{
+.section-title{
 
-display:flex;
+text-align:center;
 
-justify-content:space-between;
+font-size:42px;
 
-align-items:center;
+font-weight:800;
+
+color:#fff;
 
 margin-bottom:20px;
 
 }
 
-.market-status{
-
-padding:8px 18px;
-
-border-radius:30px;
-
-font-weight:bold;
-
-}
-
-.market-open{
-
-background:#0b8f44;
-
-color:white;
-
-}
-
-.market-close{
-
-background:#d63031;
-
-color:white;
-
-}
-
-.next-open{
+.market-info{
 
 text-align:center;
 
-margin-bottom:25px;
+margin-bottom:35px;
+
+}
+
+.market-status{
+
+display:inline-block;
+
+padding:12px 28px;
+
+border-radius:14px;
+
+font-size:20px;
+
+font-weight:700;
+
+margin-bottom:18px;
+
+}
+
+.market-status.open{
+
+background:#0f6d45;
+
+color:#62ffa7;
+
+}
+
+.market-status.closed{
+
+background:#731515;
+
+color:#ff8b8b;
+
+}
+
+.next-open span{
+
+display:block;
+
+color:#94a3b8;
+
+font-size:15px;
+
+margin-bottom:6px;
 
 }
 
@@ -247,21 +242,25 @@ margin-bottom:25px;
 
 display:block;
 
-font-size:22px;
+font-size:28px;
 
-margin-top:8px;
+font-weight:700;
 
-margin-bottom:8px;
+color:#ffffff;
 
-color:#FFD54F;
+margin-bottom:10px;
 
 }
 
 #countdown{
 
-font-size:18px;
+font-size:24px;
 
-font-weight:bold;
+font-weight:700;
+
+color:#fbbf24;
+
+letter-spacing:1px;
 
 }
 
@@ -269,7 +268,127 @@ font-weight:bold;
 
 display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+grid-template-columns:repeat(4,1fr);
+
+gap:22px;
+
+margin-top:40px;
+
+}
+
+.session-card{
+
+background:#141c2d;
+
+border:1px solid #273551;
+
+border-radius:22px;
+
+padding:35px 20px;
+
+text-align:center;
+
+transition:.25s;
+
+}
+
+.session-card:hover{
+
+transform:translateY(-4px);
+
+border-color:#3d5a80;
+
+}
+
+.session-card h3{
+
+font-size:30px;
+
+font-weight:700;
+
+color:#fff;
+
+margin-bottom:18px;
+
+}
+
+.badge{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:12px 30px;
+
+border-radius:14px;
+
+font-size:20px;
+
+font-weight:700;
+
+min-width:110px;
+
+}
+
+.badge.open{
+
+background:#0f6d45;
+
+color:#62ffa7;
+
+}
+
+.badge.closed{
+
+background:#731515;
+
+color:#ff8b8b;
+
+}
+
+@media(max-width:992px){
+
+.sessions-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.section-title{
+
+font-size:30px;
+
+}
+
+.market-status{
+
+font-size:17px;
+
+padding:10px 18px;
+
+}
+
+.next-open strong{
+
+font-size:22px;
+
+}
+
+#countdown{
+
+font-size:20px;
+
+}
+
+.sessions-grid{
+
+grid-template-columns:1fr;
 
 gap:15px;
 
@@ -277,36 +396,23 @@ gap:15px;
 
 .session-card{
 
-background:#202020;
-
-padding:18px;
-
-border-radius:14px;
-
-text-align:center;
-
-border:1px solid #333;
-
-transition:.3s;
-
-}
-
-.session-card.active{
-
-border-color:#00C853;
-
-box-shadow:0 0 15px rgba(0,200,83,.25);
-
-}
-
-.session-card.closed{
-
-opacity:.45;
+padding:28px 15px;
 
 }
 
 .session-card h3{
 
-margin-bottom:12px;
+font-size:24px;
 
-}  
+}
+
+.badge{
+
+font-size:17px;
+
+padding:10px 22px;
+
+}
+
+}
+
