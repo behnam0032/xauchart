@@ -1,13 +1,13 @@
 const API_URL =
 "https://Api.BrsApi.ir/Market/Gold_Currency.php?key=BSzSYFaRH8NcdMi7YpLdmmHYbmRjdlx7";
 
-
-
-
+/* ===========================
+   ابزارها
+=========================== */
 
 function formatNumber(num) {
 
-    if (num === undefined || num === null)
+    if (num === undefined || num === null || isNaN(num))
         return "---";
 
     return Number(num).toLocaleString("fa-IR");
@@ -27,190 +27,273 @@ function findSymbol(arr, symbol) {
     if (!Array.isArray(arr))
         return null;
 
-    return arr.find(item => item.symbol === symbol);
+    return arr.find(item => item.symbol === symbol) || null;
 }
 
-function setStatus(id, isOpen) {
+function setText(id, text) {
 
     const el = document.getElementById(id);
 
-    if (!el) return;
+    if (el)
+        el.innerHTML = text;
+}
+
+function showNextOpen(show) {
+
+    const box = document.querySelector(".next-open");
+
+    if (box)
+        box.style.display = show ? "block" : "none";
+}
+
+/* ===========================
+   سشن های فارکس
+=========================== */
+
+function updateSessions() {
+
+    const now = new Date();
+
+    const day = now.getUTCDay();
+
+    const hour =
+        now.getUTCHours() +
+        now.getUTCMinutes() / 60;
+
+    const marketStatus =
+        document.getElementById("marketStatus");
+
+    let marketClosed = false;
+
+    // شنبه
+
+    if (day === 6)
+        marketClosed = true;
+
+    // یکشنبه قبل از 21
+
+    if (day === 0 && hour < 21)
+        marketClosed = true;
+
+    // جمعه بعد از 22
+
+    if (day === 5 && hour >= 22)
+        marketClosed = true;
+
+    if (marketClosed) {
+
+        marketStatus.innerHTML =
+            "🔴 بازار فارکس تعطیل است";
+
+        marketStatus.classList.remove("open");
+
+        marketStatus.classList.add("closed");
+
+        closeAll();
+
+        showNextOpen(true);
+
+        nextOpenCountdown();
+
+        return;
+    }
+
+    marketStatus.innerHTML =
+        "🟢 بازار فارکس باز است";
+
+    marketStatus.classList.remove("closed");
+
+    marketStatus.classList.add("open");
+
+    showNextOpen(false);
+
+    updateSession("sydney", hour >= 21 || hour < 6);
+
+    updateSession("tokyo", hour >= 23 || hour < 8);
+
+    updateSession("london", hour >= 7 && hour < 16);
+
+    updateSession("newYork", hour >= 12 && hour < 21);
+
+}
+
+/* ===========================
+   بستن همه سشن ها
+=========================== */
+
+function closeAll() {
+
+    [
+        "sydney",
+        "tokyo",
+        "london",
+        "newYork"
+    ].forEach(name => {
+
+        const card =
+            document.getElementById(name + "Card");
+
+        const status =
+            document.getElementById(name + "Status");
+
+        if (!card || !status)
+            return;
+
+        status.innerHTML =
+            "🔴 بسته";
+
+        card.classList.remove("active");
+
+        card.classList.add("closed");
+
+    });
+
+}
+
+/* ===========================
+   بروزرسانی هر سشن
+=========================== */
+
+function updateSession(name, isOpen) {
+
+    const card =
+        document.getElementById(name + "Card");
+
+    const status =
+        document.getElementById(name + "Status");
+
+    if (!card || !status)
+        return;
+
+    card.classList.remove("active");
+
+    card.classList.remove("closed");
 
     if (isOpen) {
 
-        el.className = "status open";
-        el.innerText = "باز";
+        status.innerHTML =
+            "🟢 باز";
+
+        card.classList.add("active");
 
     } else {
 
-        el.className = "status closed";
-        el.innerText = "بسته";
+        status.innerHTML =
+            "🔴 بسته";
+
+        card.classList.add("closed");
+
     }
-}
-
-function checkOpen(start, end, hour) {
-
-    if (start < end)
-        return hour >= start && hour < end;
-
-    return hour >= start || hour < end;
-}
-
-function updateSessions(){
-
-const now=new Date();
-
-const day=now.getUTCDay();
-
-const hour=now.getUTCHours()+now.getUTCMinutes()/60;
-
-let marketClosed=false;
-
-
-
-if(day===6){
-
-marketClosed=true;
 
 }
 
-if(day===0 && hour<21){
+/* ===========================
+   شمارش معکوس بازگشایی
+=========================== */
 
-marketClosed=true;
+function nextOpenCountdown() {
 
-}
+    const now = new Date();
 
-if(day===5 && hour>=22){
+    const target = new Date(now);
 
-marketClosed=true;
+    target.setUTCHours(21, 0, 0, 0);
 
-}
+    if (now.getUTCDay() === 6) {
 
+        target.setUTCDate(
+            target.getUTCDate() + 1
+        );
 
+    } else if (
+        now.getUTCDay() === 0 &&
+        now.getUTCHours() < 21
+    ) {
 
-if(marketClosed){
+    } else {
 
-document.getElementById("marketStatus").innerHTML="🔴 بازار فارکس تعطیل است";
+        let days =
+            (7 - now.getUTCDay()) % 7;
 
-document.getElementById("marketStatus").className="market-status market-close";
+        if (days === 0)
+            days = 7;
 
-closeAll();
+        target.setUTCDate(
+            target.getUTCDate() + days
+        );
 
-nextOpenCountdown();
+    }
 
-return;
+    const diff =
+        Math.max(0, target - now);
 
-}
+    const h =
+        Math.floor(diff / 3600000);
 
+    const m =
+        Math.floor(diff / 60000) % 60;
 
+    const s =
+        Math.floor(diff / 1000) % 60;
 
-document.getElementById("marketStatus").innerHTML="🟢 بازار باز است";
+    setText(
+        "nextOpenTime",
+        "یکشنبه 21:00 UTC"
+    );
 
-document.getElementById("marketStatus").className="market-status market-open";
-
-
-
-updateSession("sydney",hour>=21||hour<6);
-
-updateSession("tokyo",hour>=23||hour<8);
-
-updateSession("london",hour>=7&&hour<16);
-
-updateSession("newYork",hour>=12&&hour<21);
-
-}
-
-function closeAll(){
-
-["sydney","tokyo","london","newYork"].forEach(name=>{
-
-document.getElementById(name+"Status").innerHTML="بسته";
-
-document.getElementById(name+"Card").className="session-card closed";
-
-});
-
-}
-
-function updateSession(name,isOpen){
-
-const card=document.getElementById(name+"Card");
-
-const status=document.getElementById(name+"Status");
-
-if(isOpen){
-
-status.innerHTML="🟢 باز";
-
-card.className="session-card active";
-
-}else{
-
-status.innerHTML="🔴 بسته";
-
-card.className="session-card";
+    setText(
+        "countdown",
+        `${h}h ${m}m ${s}s`
+    );
 
 }
+/* ===========================
+   دریافت اطلاعات بازار
+=========================== */
 
-}
-function nextOpenCountdown(){
-
-const now=new Date();
-
-let target=new Date(now);
-
-target.setUTCHours(21,0,0,0);
-
-// اگر شنبه است، بازگشایی یکشنبه
-if(now.getUTCDay()===6){
-
-target.setUTCDate(now.getUTCDate()+1);
-
-}
-
-// اگر یکشنبه قبل از 21 است
-else if(now.getUTCDay()===0 && now.getUTCHours()<21){
-
-}
-
-// اگر جمعه بعد از بسته شدن
-else{
-
-let days=(7-now.getUTCDay())%7;
-
-if(days===0) days=7;
-
-target.setUTCDate(now.getUTCDate()+days);
-
-}
-
-const diff=target-now;
-
-const h=Math.floor(diff/1000/60/60);
-
-const m=Math.floor(diff/1000/60)%60;
-
-const s=Math.floor(diff/1000)%60;
-
-document.getElementById("nextOpenTime").innerHTML="یکشنبه 21:00 UTC";
-
-document.getElementById("countdown").innerHTML=`${h}h ${m}m ${s}s`;
-
-}
 async function loadMarket() {
 
     try {
 
-        const response = await fetch(API_URL);
+        const response = await fetch(API_URL, {
+            cache: "no-store"
+        });
+
+        if (!response.ok) {
+            throw new Error("API Error : " + response.status);
+        }
+
         const data = await response.json();
 
         console.log(data);
 
-        const gold = data.gold || [];
-        const currency = data.currency || [];
-        const crypto = data.cryptocurrency || [];
+        /* -------------------------
+           تشخیص ساختار API
+        -------------------------- */
 
-        // GOLD
+        let gold = [];
+        let currency = [];
+        let crypto = [];
+
+        // ساختار جدید
+        if (data.gold || data.currency) {
+
+            gold = data.gold || [];
+            currency = data.currency || [];
+            crypto = data.cryptocurrency || [];
+
+        }
+
+        // ساختار قدیمی (آرایه مستقیم)
+        else if (Array.isArray(data)) {
+
+            gold = data;
+
+        }
+
+        /* -------------------------
+           GOLD
+        -------------------------- */
 
         const xau =
             findSymbol(gold, "XAUUSD");
@@ -230,17 +313,38 @@ async function loadMarket() {
         const quarter =
             findSymbol(gold, "IR_COIN_QUARTER");
 
-        // CURRENCY
+        /* -------------------------
+           Currency
+        -------------------------- */
 
         const usd =
-            findSymbol(currency, "USD");
+            findSymbol(currency, "USD") ||
+            findSymbol(currency, "USD_IRT");
 
-        // CRYPTO
+        /* -------------------------
+           USDT
+        -------------------------- */
 
-        const usdt =
+        let usdt =
             findSymbol(currency, "USDT_IRT");
 
-        // نمایش
+        if (!usdt) {
+
+            usdt =
+                findSymbol(crypto, "USDT_IRT");
+
+        }
+
+        if (!usdt) {
+
+            usdt =
+                findSymbol(crypto, "USDT");
+
+        }
+
+        /* -------------------------
+           نمایش
+        -------------------------- */
 
         setValue("xau", xau?.price);
 
@@ -258,20 +362,64 @@ async function loadMarket() {
 
         setValue("quarter", quarter?.price);
 
-        document.getElementById("last-update").innerText =
-            new Date().toLocaleTimeString("fa-IR");
+        /* -------------------------
+           آخرین بروزرسانی
+        -------------------------- */
+
+        const lastUpdate =
+            document.getElementById("last-update");
+
+        if (lastUpdate) {
+
+            lastUpdate.innerHTML =
+                new Date().toLocaleTimeString(
+                    "fa-IR"
+                );
+
+        }
 
     }
+
     catch (error) {
 
         console.error(error);
 
+        const lastUpdate =
+            document.getElementById("last-update");
+
+        if (lastUpdate) {
+
+            lastUpdate.innerHTML =
+                "خطا در دریافت اطلاعات";
+
+        }
+
     }
+
 }
 
+/* ===========================
+   شروع برنامه
+=========================== */
+
 updateSessions();
+
 loadMarket();
 
-setInterval(updateSessions, 1000);
+/* ===========================
+   تایمرها
+=========================== */
 
-setInterval(loadMarket, 60000);
+// شمارش معکوس هر ثانیه
+setInterval(() => {
+
+    updateSessions();
+
+}, 1000);
+
+// دریافت قیمت هر دقیقه
+setInterval(() => {
+
+    loadMarket();
+
+}, 60000);
