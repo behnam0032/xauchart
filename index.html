@@ -28,52 +28,54 @@
 
 </header>
 
-<section class="market-session-box">
+<section class="sessions-section">
 
-    <div class="session-header">
+    <h2 class="section-title">
+        سشن‌های بازار فارکس
+    </h2>
 
-        <h2>سشن‌های بازار فارکس</h2>
+    <div id="marketInfo" class="market-info">
 
-        <div id="marketStatus" class="market-status">
-            در حال بررسی...
+        <div id="marketStatus" class="market-status closed">
+            🔴 بازار فارکس تعطیل است
         </div>
 
-    </div>
+        <div class="next-open">
 
-    <div id="nextOpenBox" class="next-open">
+            <span>بازگشایی بعدی</span>
 
-        <span>بازگشایی بعدی</span>
+            <strong id="nextOpenText">
+                یکشنبه 21:00 UTC
+            </strong>
 
-        <strong id="nextOpenTime">
-            --
-        </strong>
+            <div id="countdown">
+                33h 12m 29s
+            </div>
 
-        <div id="countdown">
-            --
         </div>
 
     </div>
 
     <div class="sessions-grid">
 
-        <div class="session-card" id="sydneyCard">
-            <h3>🇦🇺 سیدنی</h3>
-            <span id="sydneyStatus">--</span>
+        <div id="sydneyCard" class="session-card">
+            <h3>سیدنی</h3>
+            <span id="sydneyStatus" class="badge closed">بسته</span>
         </div>
 
-        <div class="session-card" id="tokyoCard">
-            <h3>🇯🇵 توکیو</h3>
-            <span id="tokyoStatus">--</span>
+        <div id="tokyoCard" class="session-card">
+            <h3>توکیو</h3>
+            <span id="tokyoStatus" class="badge closed">بسته</span>
         </div>
 
-        <div class="session-card" id="londonCard">
-            <h3>🇬🇧 لندن</h3>
-            <span id="londonStatus">--</span>
+        <div id="londonCard" class="session-card">
+            <h3>لندن</h3>
+            <span id="londonStatus" class="badge closed">بسته</span>
         </div>
 
-        <div class="session-card" id="newYorkCard">
-            <h3>🇺🇸 نیویورک</h3>
-            <span id="newYorkStatus">--</span>
+        <div id="newYorkCard" class="session-card">
+            <h3>نیویورک</h3>
+            <span id="newYorkStatus" class="badge closed">بسته</span>
         </div>
 
     </div>
