@@ -1,4 +1,4 @@
-import{r as a}from"./header-D8et95xw.js";import{g as e,i as r}from"./calculator-BNxaeBxc.js";document.getElementById("app").innerHTML=a("calc")+`
+import{r as a}from"./header-CxXtoFjV.js";import{g as e,i as r}from"./calculator-BNxaeBxc.js";document.getElementById("app").innerHTML=a("calc")+`
 <main class="main">
   <div class="page-header"><h1>🧮 ماشین حساب فارکس</h1><p>ابزارهای حرفه‌ای محاسبه حجم، مارجین، سود/زیان و مدیریت ریسک</p></div>
   ${e()}
