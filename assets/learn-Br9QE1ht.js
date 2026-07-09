@@ -1,4 +1,4 @@
-import{r as a}from"./header-CxXtoFjV.js";document.getElementById("app").innerHTML=a("learn")+`
+import{r as a}from"./header-BGnlOYPy.js";document.getElementById("app").innerHTML=a("learn")+`
 <main class="main">
   <div class="page-header">
     <h1>📚 آموزش فارکس و معاملات طلا</h1>

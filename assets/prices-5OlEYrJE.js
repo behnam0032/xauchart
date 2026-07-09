@@ -1,4 +1,4 @@
-import{r as c}from"./header-CxXtoFjV.js";import{f as d}from"./api-BF5_4Y-g.js";const l=r=>new Intl.NumberFormat("fa-IR").format(Math.round(r)),m=(r,t=2)=>new Intl.NumberFormat("en-US",{minimumFractionDigits:t,maximumFractionDigits:t}).format(r),p=(r,t)=>t==="دلار"?m(r,r<10?4:2):l(r);document.getElementById("app").innerHTML=c("prices")+`
+import{r as c}from"./header-BGnlOYPy.js";import{f as d}from"./api-BF5_4Y-g.js";const l=r=>new Intl.NumberFormat("fa-IR").format(Math.round(r)),m=(r,t=2)=>new Intl.NumberFormat("en-US",{minimumFractionDigits:t,maximumFractionDigits:t}).format(r),p=(r,t)=>t==="دلار"?m(r,r<10?4:2):l(r);document.getElementById("app").innerHTML=c("prices")+`
 <main class="main">
   <div class="page-header"><h1>📊 همه قیمت‌ها</h1><p>قیمت لحظه‌ای طلا، سکه، ارز و ارز دیجیتال</p></div>
   <div class="error-bar" id="errorBar">❌ <span id="errorMsg">خطا</span><button onclick="window._loadAll()" style="margin-right:auto;background:none;border:none;color:inherit;cursor:pointer;font-size:12px;text-decoration:underline">تلاش مجدد</button></div>
