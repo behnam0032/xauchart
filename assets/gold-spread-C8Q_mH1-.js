@@ -1,4 +1,4 @@
-import{r as a,i as t}from"./header-Bv_barX5.js";import{a as s,b as l}from"./seo-BHAbaErS.js";document.getElementById("app").innerHTML=a("learn")+`
+import{r as a,i as t}from"./header-dgUtNWkJ.js";import{a as s,b as l}from"./seo-BHAbaErS.js";document.getElementById("app").innerHTML=a("learn")+`
 <main class="main">
   <article class="article-content">
     <header class="article-header">
