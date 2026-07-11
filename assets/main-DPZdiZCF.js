@@ -1,4 +1,4 @@
-import{r as p,i as u,a as g}from"./clock-5GP_bDwf.js";import{H as t,f}from"./api-BF5_4Y-g.js";import{g as w,i as b}from"./calculator-BNxaeBxc.js";const y=i=>new Intl.NumberFormat("fa-IR").format(Math.round(i)),$=(i,e=2)=>new Intl.NumberFormat("en-US",{minimumFractionDigits:e,maximumFractionDigits:e}).format(i),h=(i,e)=>e==="دلار"?$(i,i<10?4:2):y(i);document.getElementById("app").innerHTML=p("home")+`
+import{r as p,i as u,a as g}from"./clock-BtNpzf7s.js";import{H as t,f}from"./api-BF5_4Y-g.js";import{g as w,i as b}from"./calculator-BNxaeBxc.js";const y=i=>new Intl.NumberFormat("fa-IR").format(Math.round(i)),$=(i,e=2)=>new Intl.NumberFormat("en-US",{minimumFractionDigits:e,maximumFractionDigits:e}).format(i),h=(i,e)=>e==="دلار"?$(i,i<10?4:2):y(i);document.getElementById("app").innerHTML=p("home")+`
 <main class="main">
   <!-- ساعت + سشن‌ها -->
   <div class="clock-bar">

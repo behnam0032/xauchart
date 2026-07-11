@@ -1,4 +1,4 @@
-import{r as l,i as a,a as i}from"./clock-5GP_bDwf.js";import{a as s,b as t}from"./seo-BHAbaErS.js";document.getElementById("app").innerHTML=l("learn")+`
+import{r as l,i as a,a as i}from"./clock-BtNpzf7s.js";import{a as s,b as t}from"./seo-BHAbaErS.js";document.getElementById("app").innerHTML=l("learn")+`
 <main class="main">
   <article class="article-content">
     <header class="article-header">
