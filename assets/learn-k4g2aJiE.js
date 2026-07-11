@@ -1,4 +1,4 @@
-import{r as a}from"./header-dgUtNWkJ.js";document.getElementById("app").innerHTML=a("learn")+`
+import{r as a,i as c,a as s}from"./clock-5GP_bDwf.js";document.getElementById("app").innerHTML=a("learn")+`
 <main class="main">
   <div class="page-header">
     <h1>📚 آموزش فارکس و معاملات طلا</h1>
@@ -48,4 +48,4 @@ import{r as a}from"./header-dgUtNWkJ.js";document.getElementById("app").innerHTM
       <span class="article-card-meta">به زودی</span>
     </div>
   </div>
-</main>`;
+</main>`;c();s();
