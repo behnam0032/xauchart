@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>در حال آماده‌سازی دانلود | XAUChart</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Vazirmatn', system-ui, sans-serif;
+      background: #0C0C10;
+      color: #F0EDE6;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      direction: rtl;
+    }
+    .container {
+      text-align: center;
+      padding: 40px;
+      max-width: 500px;
+    }
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 3px solid rgba(212,175,55,0.2);
+      border-top-color: #D4AF37;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    h1 { color: #D4AF37; font-size: 20px; margin-bottom: 12px; }
+    p { color: #6B6878; font-size: 14px; line-height: 1.6; }
+    .error { color: #ef4444; margin-top: 20px; }
+    .success { color: #22c55e; margin-top: 20px; }
+    a { color: #D4AF37; text-decoration: none; margin-top: 20px; display: inline-block; }
+    .back-btn {
+      display: none;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: var(--gold-glow, rgba(212,175,55,0.15));
+      border: 0.5px solid var(--border-gold, rgba(212,175,55,0.3));
+      border-radius: 10px;
+      color: #D4AF37;
+      font-size: 14px;
+      text-decoration: none;
+      transition: all .15s;
+    }
+    .back-btn:hover { background: rgba(212,175,55,0.25); }
+  </style>
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="spinner" id="spinner"></div>
+    <h1 id="title">در حال آماده‌سازی دانلود...</h1>
+    <p id="message">لطفاً چند لحظه صبر کنید</p>
+    <div id="error" class="error" style="display:none"></div>
+    <div id="success" class="success" style="display:none"></div>
+    <a href="/money-management.html" class="back-btn" id="backLink">بازگشت به صفحه اکسپرت</a>
+  </div>
+
+  <script>
+    // بررسی referer
+    const referrer = document.referrer;
+    const currentOrigin = window.location.origin;
+    const allowedPages = [
+      currentOrigin + '/money-management.html',
+      currentOrigin + '/experts.html',
+      currentOrigin + '/',
+    ];
+
+    const isAllowed = allowedPages.some(page => referrer.startsWith(page));
+
+    if (!isAllowed && referrer !== '') {
+      document.getElementById('title').textContent = 'لینک دانلود مستقیم غیرفعال است';
+      document.getElementById('message').textContent = 'برای دانلود فایل، لطفاً به صفحه اصلی اکسپرت مراجعه کنید.';
+      document.getElementById('error').style.display = 'block';
+      document.getElementById('backLink').style.display = 'inline-block';
+      document.getElementById('spinner').style.display = 'none';
+    } else {
+      const params = new URLSearchParams(window.location.search);
+      const file = params.get('file');
+
+      if (!file || !file.endsWith('.ex5')) {
+        document.getElementById('title').textContent = 'فایل نامعتبر است';
+        document.getElementById('message').textContent = 'لطفاً از صفحه اصلی اکسپرت استفاده کنید.';
+        document.getElementById('error').style.display = 'block';
+        document.getElementById('backLink').style.display = 'inline-block';
+        document.getElementById('spinner').style.display = 'none';
+      } else {
+        // شروع دانلود بعد از ۲ ثانیه با لینک مخفی
+        setTimeout(() => {
+          const link = document.createElement('a');
+          link.href = '/scripts/' + file;
+          link.download = file;
+          link.style.display = 'none';
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+
+          // نمایش پیام موفقیت و بازگشت خودکار
+          document.getElementById('spinner').style.display = 'none';
+          document.getElementById('title').textContent = 'دانلود شروع شد!';
+          document.getElementById('message').textContent = 'اگر دانلود شروع نشد، از مرورگر خود تنظیمات دانلود را بررسی کنید.';
+          document.getElementById('success').style.display = 'block';
+          document.getElementById('success').textContent = '✅ دانلود با موفقیت آغاز شد';
+          document.getElementById('backLink').style.display = 'inline-block';
+
+          // بازگشت خودکار به صفحه اکسپرت بعد از ۳ ثانیه
+          setTimeout(() => {
+            window.location.href = '/money-management.html';
+          }, 3000);
+        }, 2000);
+      }
+    }
+  </script>
+</body>
+</html>
