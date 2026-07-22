@@ -24,7 +24,7 @@ import{r as s,i,a}from"./clock-Y_QwIpLD.js";document.getElementById("app").inner
   <div class="ea-preview">
     <img src="/images/money-management-preview.png" alt="پیش‌نمایش اکسپرت مدیریت سرمایه XAUChart روی چارت XAUUSD" class="ea-preview-img">
     <div class="ea-preview-caption">
-      پیش‌نمایش اکسپرت روی چارت XAUUSD — خط قرمز SL قابل جابه‌جایی، خط سبز TP خودکار، و پنل اطلاعات زنده
+      پیش‌نمایش اکسپرت روی چارت XAUUSD — خط نارنجی SL قابل جابه‌جایی، خط سبز TP خودکار، و پنل اطلاعات زنده
     </div>
   </div>
 
