@@ -1,4 +1,4 @@
-import{r as t,a,i as l}from"./clock-Y_QwIpLD.js";import{a as s,b as i}from"./seo-BHAbaErS.js";document.getElementById("app").innerHTML=t("learn")+`
+import{r as t,a,i as l}from"./clock-BeWxoAVR.js";import{a as s,b as i}from"./seo-BHAbaErS.js";document.getElementById("app").innerHTML=t("learn")+`
 <main class="main">
   <article class="article-content">
     <header class="article-header">
@@ -159,7 +159,7 @@ import{r as t,a,i as l}from"./clock-Y_QwIpLD.js";import{a as s,b as i}from"./seo
 
     <h2>چگونه پیپ را سریع محاسبه کنیم؟</h2>
     <p>
-      برای راحتی کار، می‌توانید از <a href="/calc.html" class="internal-link">ماشین حساب فارکس</a> ما استفاده کنید. 
+      برای راحتی کار، می‌توانید از <a href="/calc" class="internal-link">ماشین حساب فارکس</a> ما استفاده کنید. 
       کافی است جفت ارز (XAU/USD)، حجم معامله و تغییر قیمت را وارد کنید تا 
       ارزش پیپ و سود/زیان را به صورت خودکار محاسبه کند.
     </p>
@@ -201,17 +201,17 @@ import{r as t,a,i as l}from"./clock-Y_QwIpLD.js";import{a as s,b as i}from"./seo
     <div class="article-tools">
       <h3>🛠 ابزارهای مرتبط</h3>
       <div class="tools-grid">
-        <a href="/calc.html" class="tool-card">
+        <a href="/calc" class="tool-card">
           <span class="tool-icon">🧮</span>
           <span class="tool-title">ماشین حساب فارکس</span>
           <span class="tool-desc">محاسبه ارزش پیپ، حجم معامله و سود/زیان</span>
         </a>
-        <a href="/learn/what-is-gold-spread.html" class="tool-card">
+        <a href="/learn/what-is-gold-spread" class="tool-card">
           <span class="tool-icon">📊</span>
           <span class="tool-title">اسپرد طلا چیست؟</span>
           <span class="tool-desc">آموزش کامل Spread و تأثیر آن بر معاملات</span>
         </a>
-        <a href="/learn/what-is-lot.html" class="tool-card">
+        <a href="/learn/what-is-lot" class="tool-card">
           <span class="tool-icon">📦</span>
           <span class="tool-title">لات در طلا چیست؟</span>
           <span class="tool-desc">انواع لات و نحوه انتخاب حجم مناسب</span>
@@ -222,9 +222,9 @@ import{r as t,a,i as l}from"./clock-Y_QwIpLD.js";import{a as s,b as i}from"./seo
     <div class="related-articles">
       <h3>📚 پیشنهاد مطالعه</h3>
       <ul class="article-list">
-        <li><a href="/learn/what-is-gold-spread.html">اسپرد طلا چیست؟</a></li>
-        <li><a href="/learn/what-is-lot.html">لات در طلا چیست؟</a></li>
-        <li><a href="/learn/risk-management.html">مدیریت سرمایه در فارکس</a></li>
+        <li><a href="/learn/what-is-gold-spread">اسپرد طلا چیست؟</a></li>
+        <li><a href="/learn/what-is-lot">لات در طلا چیست؟</a></li>
+        <li><a href="/learn/risk-management">مدیریت سرمایه در فارکس</a></li>
         <li><a href="/">قیمت لحظه‌ای طلا</a></li>
       </ul>
     </div>

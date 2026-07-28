@@ -1,8 +1,9 @@
-import{r as s,i,a}from"./clock-Y_QwIpLD.js";document.getElementById("app").innerHTML=s("experts")+`
+import{r as s,i as a,a as i}from"./clock-BeWxoAVR.js";document.getElementById("app").innerHTML=s("experts")+`
 <main class="main">
   <!-- Hero Section -->
   <div class="ea-hero">
     <div class="ea-hero-badge">XAUUSD MONEY MANAGEMENT EA — LIVE ON MT5</div>
+    <div class="ea-hero-subbadge">RISK-BASED LOT SIZING · TRAILING (PIPS/%) · SPREAD LOCK · POSITION CAP</div>
     <h1 class="ea-hero-title">معامله با ریسک کنترل‌شده،<br>نه با حدس و گمان</h1>
     <p class="ea-hero-subtitle">
       اکثر ضررهای بزرگ از تحلیل غلط نمی‌آیند؛ از <strong>حجم غلط</strong> می‌آیند.
@@ -10,10 +11,10 @@ import{r as s,i,a}from"./clock-Y_QwIpLD.js";document.getElementById("app").inner
       حجم معامله، حد سود، مارجین لازم و حتی امکان‌پذیر بودن ریسکتون رو لحظه‌ای براتون محاسبه می‌کنه.
     </p>
     <div class="ea-hero-actions">
-      <a href="/download.html?file=xauchart-mm-mt5.ex5" class="btn-download-large">
+      <a href="/download?file=xauchart-mm-mt5.ex5" class="btn-download-large">
         ⬇️ دانلود نسخه MT5
       </a>
-      <a href="/download.html?file=money-management-mt4.ex4" class="btn-download-large btn-secondary">
+      <a href="/download?file=xauchart-mm-mt4.ex4" class="btn-download-large btn-secondary">
         ⬇️ دانلود نسخه MT4
       </a>
     </div>
@@ -30,7 +31,7 @@ import{r as s,i,a}from"./clock-Y_QwIpLD.js";document.getElementById("app").inner
 
   <!-- How it works -->
   <div class="page-header" id="how">
-    <h1>🛠 این ابزار چطور کار می‌کند؟</h1>
+    <h1> این ابزار چطور کار می‌کند؟</h1>
     <p>۵ مرحله ساده از نصب تا معامله</p>
   </div>
 
@@ -39,21 +40,21 @@ import{r as s,i,a}from"./clock-Y_QwIpLD.js";document.getElementById("app").inner
       <div class="ea-step-num">۱</div>
       <div class="ea-step-content">
         <h3>ظاهر شدن خط SL و پنل</h3>
-        <p>به محض انداختن اکسپرت روی چارت، یک خط چین قرمز (SL) و یک پنل اطلاعات ظاهر می‌شود.</p>
+        <p>به محض انداختن اکسپرت روی چارت، یک خط چین نارنجی (SL) و یک پنل اطلاعات ظاهر می‌شود.</p>
       </div>
     </div>
     <div class="ea-step">
       <div class="ea-step-num">۲</div>
       <div class="ea-step-content">
         <h3>تشخیص هوشمند جهت</h3>
-        <p>اگر خط قرمز را پایین‌تر از قیمت فعلی بکشید، سیستم حالت <strong>BUY</strong> را فعال می‌کند. اگر بالاتر بکشید، حالت <strong>SELL</strong> فعال می‌شود.</p>
+        <p>اگر خط نارنجی را پایین‌تر از قیمت فعلی بکشید، سیستم حالت <strong>BUY</strong> را فعال می‌کند. اگر بالاتر بکشید، حالت <strong>SELL</strong> فعال می‌شود.</p>
       </div>
     </div>
     <div class="ea-step">
       <div class="ea-step-num">۳</div>
       <div class="ea-step-content">
         <h3>رسم خودکار TP</h3>
-        <p>به محض جابه‌جایی خط قرمز، یک خط چین سبز بر اساس نسبت ریسک به ریوارد (مثلاً ۲ برابر فاصله استاپ) رسم می‌شود. این خط قفل است و فقط با حرکت SL تغییر می‌کند.</p>
+        <p>به محض جابه‌جایی خط نارنجی، یک خط چین سبز بر اساس نسبت ریسک به ریوارد (مثلاً ۲ برابر فاصله استاپ) رسم می‌شود. این خط قفل است و فقط با حرکت SL تغییر می‌کند.</p>
       </div>
     </div>
     <div class="ea-step">
@@ -78,36 +79,43 @@ import{r as s,i,a}from"./clock-Y_QwIpLD.js";document.getElementById("app").inner
     <p>شما فقط درصد ریسک و نسبت ریسک‌به‌ریوارد رو تعیین می‌کنید. بقیه‌ی محاسبات، پیش‌نمایش و اجرا با اکسپرته.</p>
   </div>
 
-  <div class="ea-features-grid">
-    <div class="ea-feature-card">
-      <div class="ea-feature-badge">01</div>
-      <h3>AUTO LOT SIZING</h3>
-      <h4>محاسبه‌ی خودکار حجم بر اساس درصد ریسک</h4>
-      <p>یک خط افقی قابل‌درگ (SL) روی چارت دارید. هر بار که با ماوس جابه‌جاش می‌کنید، حجم معامله بر اساس همون درصد ریسکی که در تنظیمات مشخص کردید، لحظه‌ای بازمحاسبه می‌شه — دقیق، بدون اکسل و بدون محاسبه‌ی دستی.</p>
-    </div>
-    <div class="ea-feature-card">
-      <div class="ea-feature-badge">02</div>
-      <h3>AUTO TAKE PROFIT</h3>
-      <h4>حد سود با نسبت ریسک‌به‌ریوارد دلخواه</h4>
-      <p>خط TP همزمان با SL و بر اساس نسبت RR انتخابی شما (مثلاً ۱ به ۲) ترسیم می‌شه. اگر ۱۰ دلار ریسک می‌کنید، هدف سود خودش رو با ۲۰ دلار تنظیم می‌کنه.</p>
-    </div>
-    <div class="ea-feature-card">
-      <div class="ea-feature-badge">03</div>
-      <h3>LIVE TOOLTIP</h3>
-      <h4>پیش‌نمایش دقیق سود و زیان روی خود خط‌ها</h4>
-      <p>نگه‌داشتن ماوس روی خط SL یا TP، تولتیپی باز می‌کنه که فاصله به pip، حجم دقیق محاسبه‌شده و مبلغ واقعی سود/ضرر به دلار رو نشون می‌ده — قبل از این‌که وارد معامله بشید.</p>
-    </div>
-    <div class="ea-feature-card">
-      <div class="ea-feature-badge">04</div>
-      <h3>ONE-CLICK ENTRY</h3>
-      <h4>باز کردن معامله با یک کلیک</h4>
-      <p>دکمه‌ی بزرگ خرید/فروش، جهتش رو خودکار از روی محل خط SL تشخیص می‌ده. با یک کلیک، پوزیشن دقیقاً با همون حجم، SL و TP پیش‌نمایش‌شده باز می‌شه.</p>
-    </div>
+<div class="ea-features-grid">
+  <div class="ea-feature-card">
+    <div class="ea-feature-badge">01</div>
+    <h3>AUTO LOT SIZING</h3>
+    <h4>محاسبه‌ی خودکار حجم بر اساس درصد ریسک</h4>
+    <p>یک خط افقی قابل‌درگ (SL) روی چارت دارید. هر بار که با ماوس جابه‌جاش می‌کنید، حجم معامله بر اساس همون درصد ریسکی که در تنظیمات مشخص کردید، لحظه‌ای بازمحاسبه می‌شه — دقیق، بدون اکسل و بدون محاسبه‌ی دستی.</p>
   </div>
+  <div class="ea-feature-card">
+    <div class="ea-feature-badge">02</div>
+    <h3>AUTO TAKE PROFIT</h3>
+    <h4>حد سود با نسبت ریسک‌به‌ریوارد دلخواه</h4>
+    <p>خط TP همزمان با SL و بر اساس نسبت RR انتخابی شما (مثلاً ۱ به ۲) ترسیم می‌شه. اگر ۱ دلار ریسک می‌کنید، هدف سود خودش رو با ۲۰ دلار تنظیم می‌کنه.</p>
+  </div>
+  <div class="ea-feature-card">
+    <div class="ea-feature-badge">03</div>
+    <h3>LIVE TOOLTIP</h3>
+    <h4>پیش‌نمایش دقیق سود و زیان روی خود خط‌ها</h4>
+    <p>نگه‌داشتن ماوس روی خط SL یا TP، تولتیپی باز می‌کنه که فاصله به pip، حجم دقیق محاسبه‌شده و مبلغ واقعی سود/ضرر به دلار رو نشون می‌ده — قبل از این‌که وارد معامله بشید.</p>
+  </div>
+  <div class="ea-feature-card">
+    <div class="ea-feature-badge">04</div>
+    <h3>ONE-CLICK ENTRY</h3>
+    <h4>باز کردن معامله با یک کلیک</h4>
+    <p>دکمه‌ی بزرگ خرید/فروش، جهتش رو خودکار از روی محل خط SL تشخیص می‌ده. با یک کلیک، پوزیشن دقیقاً با همون حجم، SL و TP پیش‌نمایش‌شده باز می‌شه.</p>
+  </div>
+  
+  <div class="ea-feature-card">
+    <div class="ea-feature-badge">05</div>
+    <h3>SAFETY LOCK</h3>
+    <h4>دکمه‌ی قفل امنیتی — جلوی کلیک‌های اشتباه رو می‌گیره</h4>
+    <p>یه دکمه‌ی کوچیک بالای پنل (گوشه‌ی نوار عنوان) کل معامله‌گری رو با یک کلیک قفل می‌کنه. تا وقتی قفله، دکمه‌ی خرید/فروش کاملاً خاکستری و غیرقابل‌کلیکه — مناسب وقتی می‌خواید فقط چارت رو تحلیل کنید بدون ریسک کلیک اشتباه، یا وقتی چند نفر به یک سیستم دسترسی دارن.</p>
+  </div>
+</div>
 
   <!-- Risk Protection -->
   <div class="page-header">
-    <h1>🛡️ سیستم چهارلایه‌ی محافظت از ریسک</h1>
+    <h1>️ سیستم پنج‌لایه‌ی محافظت از ریسک</h1>
     <p>خیلی از ابزارهای مشابه فقط لات حساب می‌کنن. این اکسپرت جلوی معاملاتی رو هم می‌گیره که اصلاً نباید باز بشن.</p>
   </div>
 
@@ -125,7 +133,7 @@ import{r as s,i,a}from"./clock-Y_QwIpLD.js";document.getElementById("app").inner
       <div class="ea-risk-tag">TRADE BTN → HIDDEN</div>
     </div>
     <div class="ea-risk-card">
-      <div class="ea-risk-icon">🚫</div>
+      <div class="ea-risk-icon"></div>
       <h3>ریسک اصلاً ممکن نیست</h3>
       <p>در نمادهایی مثل بیت‌کوین، حتی کمترین حجم در نزدیک‌ترین فاصله‌ی مجاز بروکر هم ریسک شما رو رد می‌کنه.</p>
       <div class="ea-risk-tag">HONEST WARNING</div>
@@ -135,6 +143,12 @@ import{r as s,i,a}from"./clock-Y_QwIpLD.js";document.getElementById("app").inner
       <h3>مارجین آزاد کافی نیست</h3>
       <p>حتی اگه ریسک درست باشه، ممکنه موجودی حساب برای باز کردن اون حجم کافی نباشه — دقیقاً محاسبه و اعلام می‌شه.</p>
       <div class="ea-risk-tag">MARGIN CHECK</div>
+    </div>
+    <div class="ea-risk-card">
+      <div class="ea-risk-icon">🔒</div>
+      <h3>اسپرد غیرعادی زیاد</h3>
+      <p>در ساعات کم‌معامله یا نزدیک اخبار مهم، اسپرد می‌تونه ناگهان چند برابر بشه. با آستانه‌ی جداگانه برای طلا، فارکس و کریپتو، اکسپرت این لحظه‌ها رو تشخیص و معامله رو بلاک می‌کنه.</p>
+      <div class="ea-risk-tag">SPREAD LOCK</div>
     </div>
   </div>
 
@@ -147,13 +161,13 @@ import{r as s,i,a}from"./clock-Y_QwIpLD.js";document.getElementById("app").inner
   <div class="ea-after-entry">
     <div class="ea-ae-card">
       <div class="ea-ae-icon">📈</div>
-      <h3>تریلینگ استاپ خودکار — پیپ یا درصد</h3>
-      <p>وقتی معامله وارد سود می‌شه، حد ضرر به‌صورت خودکار پشت قیمت کشیده می‌شه تا سود شناور شما قفل بشه. چون این اکسپرت روی همه‌ی نمادها (از فارکس تا طلا و کریپتو) کار می‌کنه، می‌تونید واحد اندازه‌گیری فاصله‌ها رو بین پیپ ثابت یا درصدی از قیمت ورود انتخاب کنید — تا فاصله‌ها روی هر نمادی متناسب و معنادار بمونن.</p>
+      <h3>تریلینگ استاپ — با قفل تضمینی حداقل سود</h3>
+      <p>وقتی معامله وارد سود می‌شه، حد ضرر به‌صورت خودکار پشت قیمت کشیده می‌شه تا سود شناور شما قفل بشه. <strong>نکته‌ی مهم:</strong> حداقل سود (MinProfit) یک آستانه‌ی ساده برای روشن‌کردن تریلینگ نیست — اکسپرت طوری حساب می‌کنه که اولین جابه‌جایی SL دقیقاً همون مقدار حداقل سود رو قفل کنه، نه کمتر. مثلاً با ورود ۰۰۰، حداقل سود ۰۰ پیپ و فاصله‌ی تریلینگ ۵۰ پیپ: تا قیمت به ۳۰۰۲.۵۰ نرسه هیچ اتفاقی نمی‌افته؛ دقیقاً همون‌جا SL برای اولین بار به ۳۰۰۲.۰۰ منتقل می‌شه (یعنی ۲۰۰ پیپ سود تضمینی) و از اون به بعد طبق فاصله و گام عادی ادامه پیدا می‌کنه. همچنین چون این اکسپرت روی همه‌ی نمادها کار می‌کنه، واحد اندازه‌گیری همه‌ی این فاصله‌ها بین پیپ ثابت یا درصدی از قیمت ورود قابل‌انتخابه.</p>
       <div class="ea-ae-params">
         <div class="param"><span class="param-name">TrailingUnit</span><span class="param-desc">پیپ / درصد</span></div>
         <div class="param"><span class="param-name">TrailingDistance</span><span class="param-desc">فاصله‌ی تریلینگ از قیمت</span></div>
         <div class="param"><span class="param-name">TrailingStep</span><span class="param-desc">حداقل گام حرکت</span></div>
-        <div class="param"><span class="param-name">TrailingMinProfit</span><span class="param-desc">حداقل سود برای شروع</span></div>
+        <div class="param"><span class="param-name">TrailingMinProfit</span><span class="param-desc">حداقل سود تضمینی قفل‌شده</span></div>
       </div>
     </div>
     <div class="ea-ae-card">
@@ -167,9 +181,33 @@ import{r as s,i,a}from"./clock-Y_QwIpLD.js";document.getElementById("app").inner
     </div>
   </div>
 
+  <!-- Execution Accuracy -->
+  <div class="page-header">
+    <h1> اسپرد رو هم می‌بینه، نه فقط قیمت رو</h1>
+    <p>خیلی از ابزارها موقع محاسبه‌ی ریسک و پیش‌نمایش، اسپرد رو کاملاً نادیده می‌گیرن. این اکسپرت هم توی محاسبات، هم توی امنیت معامله، اسپرد رو جدی می‌گیره.</p>
+  </div>
+
+  <div class="ea-exec-grid">
+    <div class="ea-exec-card">
+      <div class="ea-exec-icon">B/A</div>
+      <h3>پیش‌نمایش دقیق و هم‌راستا با اجرای واقعی</h3>
+      <p>خط SL/TP و محاسبه‌ی حجم، به‌جای یک قیمت ثابت، بر مبنای <strong>Ask برای خرید</strong> و <strong>Bid برای فروش</strong> ساخته می‌شن — دقیقاً همون قیمتی که واقعاً هنگام باز شدن معامله ثبت می‌شه. یعنی چیزی که در پیش‌نمایش (حجم، فاصله، تولتیپ) می‌بینید، صد‌درصد با چیزی که بعد از کلیک باز می‌شه یکیه؛ نه یک تخمین تقریبی.</p>
+    </div>
+    <div class="ea-exec-card">
+      <div class="ea-exec-icon">SPR</div>
+      <h3>قفل محافظتی اسپرد — جداگانه برای هر بازار</h3>
+      <p>چون اسپرد طبیعی طلا، فارکس و کریپتو زمین تا آسمون فرق داره، یک عدد ثابت برای همه‌ی نمادها معنی نداره. برای همین سه آستانه‌ی جداگانه تعریف می‌شه؛ اکسپرت خودش نوع نماد رو تشخیص می‌ده و آستانه‌ی درست رو اعمال می‌کنه. یه ردیف زنده هم زیر دکمه‌ی معامله اسپرد فعلی رو نشون می‌ده و از ۸۰٪ آستانه به بعد، زودتر از قفل کامل، قرمز می‌شه.</p>
+      <div class="ea-ae-params">
+        <div class="param"><span class="param-name">MaxSpreadGold_Pips</span><span class="param-desc">سقف اسپرد طلا</span></div>
+        <div class="param"><span class="param-name">MaxSpreadForex_Pips</span><span class="param-desc">سقف اسپرد فارکس</span></div>
+        <div class="param"><span class="param-name">MaxSpreadCrypto_Pips</span><span class="param-desc">سقف اسپرد کریپتو</span></div>
+      </div>
+    </div>
+  </div>
+
   <!-- Settings Table -->
   <div class="page-header">
-    <h1>⚙️ هیچ‌چیز قفل نیست — همه‌چیز قابل‌تنظیم</h1>
+    <h1>️ هیچ‌چیز قفل نیست — همه‌چیز قابل‌تنظیم</h1>
     <p>از پنجره‌ی Inputs متاتریدر، رفتار و ظاهر اکسپرت رو کامل شخصی‌سازی کنید.</p>
   </div>
 
@@ -189,7 +227,15 @@ import{r as s,i,a}from"./clock-Y_QwIpLD.js";document.getElementById("app").inner
       <div class="setting-row"><div class="setting-name">TrailingUnit</div><div class="setting-desc">واحد اندازه‌گیری فاصله‌های تریلینگ: پیپ یا درصد از قیمت ورود</div></div>
       <div class="setting-row"><div class="setting-name">TrailingDistance_Pips / _Percent</div><div class="setting-desc">فاصله‌ی تریلینگ از قیمت جاری (بر حسب واحد انتخابی)</div></div>
       <div class="setting-row"><div class="setting-name">TrailingStep_Pips / _Percent</div><div class="setting-desc">حداقل گام حرکت مجاز تریلینگ (بر حسب واحد انتخابی)</div></div>
-      <div class="setting-row"><div class="setting-name">TrailingMinProfit_Pips / _Percent</div><div class="setting-desc">حداقل سودی که باید کسب بشه تا تریلینگ شروع بشه</div></div>
+      <div class="setting-row"><div class="setting-name">TrailingMinProfit_Pips / _Percent</div><div class="setting-desc">حداقل سودی که تضمین می‌شه اولین بار SL جابه‌جا بشه (نه فقط یه آستانه‌ی روشن/خاموش)</div></div>
+    </div>
+
+    <div class="ea-settings-group">
+      <h3>SPREAD PROTECTION</h3>
+      <div class="setting-row"><div class="setting-name">EnableSpreadProtection</div><div class="setting-desc">فعال یا غیرفعال کردن قفل محافظتی اسپرد</div></div>
+      <div class="setting-row"><div class="setting-name">MaxSpreadGold_Pips</div><div class="setting-desc">حداکثر اسپرد مجاز برای نمادهای طلا (پیپ)</div></div>
+      <div class="setting-row"><div class="setting-name">MaxSpreadForex_Pips</div><div class="setting-desc">حداکثر اسپرد مجاز برای جفت‌ارزهای فارکس (پیپ)</div></div>
+      <div class="setting-row"><div class="setting-name">MaxSpreadCrypto_Pips</div><div class="setting-desc">حداکثر اسپرد مجاز برای نمادهای کریپتو (پیپ)</div></div>
     </div>
 
     <div class="ea-settings-group">
@@ -216,7 +262,7 @@ import{r as s,i,a}from"./clock-Y_QwIpLD.js";document.getElementById("app").inner
   <div class="panel">
     <div class="panel-title">💡 نکات تکمیلی و ایمنی</div>
     <ul class="check-list">
-      <li>خط سبز (TP) به‌صورت عمدی غیرقابل جابه‌جایی با ماوس قفل شده است. برای تغییر آن، فقط کافی است خط قرمز (SL) را جابه‌جا کنید؛ خط سبز خودکار آپدیت می‌شود.</li>
+      <li>خط سبز (TP) به‌صورت عمدی غیرقابل جابه‌جایی با ماوس قفل شده است. برای تغییر آن، فقط کافی است خط نارنجی (SL) را جابه‌جا کنید؛ خط سبز خودکار آپدیت می‌شود.</li>
       <li>پیشنهاد می‌شود قبل از استفاده در حساب واقعی (Real)، حتماً یک بار عملکرد آن را در حساب دمو (Demo) تست کنید تا با نحوه تعامل خط‌ها و دکمه‌ها کاملاً آشنا شوید.</li>
       <li>این اکسپرت هیچ معامله‌ای را به‌صورت خودکار و بدون اجازه شما باز نمی‌کند و فقط پس از کلیک دستی شما روی دکمه‌های پنل، دستور ارسال می‌شود.</li>
     </ul>
@@ -231,17 +277,17 @@ import{r as s,i,a}from"./clock-Y_QwIpLD.js";document.getElementById("app").inner
           <div class="file-icon">📦</div>
           <div class="file-details">
             <div class="file-name">xauchart-mm-mt5.ex5</div>
-            <div class="file-meta">متاتریدر ۵ · نسخه .۰.۰</div>
+            <div class="file-meta">متاتریدر  · نسخه ۱.۰.۰</div>
           </div>
-          <a href="/download.html?file=xauchart-mm-mt5.ex5" class="btn-download-large">⬇️ دانلود MT5</a>
+          <a href="/download?file=xauchart-mm-mt5.ex5" class="btn-download-large">️ دانلود MT5</a>
         </div>
         <div class="download-file-info">
           <div class="file-icon">📦</div>
           <div class="file-details">
-            <div class="file-name">money-management-mt4.ex4</div>
-            <div class="file-meta">متاتریدر ۴ · نسخه ۱..۰</div>
+            <div class="file-name">xauchart-mm-mt4.ex4</div>
+            <div class="file-meta">متاتریدر ۴ · نسخه ۱.۰.</div>
           </div>
-          <a href="/download.html?file=money-management-mt4.ex4" class="btn-download-large btn-secondary">⬇️ دانلود MT4</a>
+          <a href="/download?file=xauchart-mm-mt4.ex4" class="btn-download-large btn-secondary">⬇️ دانلود MT4</a>
         </div>
       </div>
       <div class="alert-box tip" style="margin-top:14px">
@@ -252,7 +298,7 @@ import{r as s,i,a}from"./clock-Y_QwIpLD.js";document.getElementById("app").inner
 
   <!-- Back -->
   <div style="text-align:center;margin-top:20px">
-    <a href="/experts.html" class="btn-read-more">← بازگشت به لیست اکسپرت‌ها</a>
+    <a href="/experts" class="btn-read-more">← بازگشت به لیست اکسپرت‌ها</a>
   </div>
 </main>
-`;i();a();
+`;a();i();

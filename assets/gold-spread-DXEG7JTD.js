@@ -1,4 +1,4 @@
-import{r as a,i as t,a as s}from"./clock-Y_QwIpLD.js";import{a as l,b as d}from"./seo-BHAbaErS.js";document.getElementById("app").innerHTML=a("learn")+`
+import{r as a,i as t,a as s}from"./clock-BeWxoAVR.js";import{a as l,b as d}from"./seo-BHAbaErS.js";document.getElementById("app").innerHTML=a("learn")+`
 <main class="main">
   <article class="article-content">
     <header class="article-header">
@@ -46,7 +46,7 @@ import{r as a,i as t,a as s}from"./clock-Y_QwIpLD.js";import{a as l,b as d}from"
       <li>هنگام انتشار اخبار معامله نکنید</li>
       <li>در ساعات هم‌پوشانی <a href="/">سشن لندن و نیویورک</a> معامله کنید</li>
       <li>حساب ECN یا Raw Spread بررسی کنید</li>
-      <li>قبل از معامله، اسپرد را با <a href="/calc.html">ماشین حساب فارکس</a> محاسبه کنید</li>
+      <li>قبل از معامله، اسپرد را با <a href="/calc">ماشین حساب فارکس</a> محاسبه کنید</li>
     </ul>
 
     <h2>سوالات متداول</h2>
@@ -57,7 +57,7 @@ import{r as a,i as t,a as s}from"./clock-Y_QwIpLD.js";import{a as l,b as d}from"
     <div class="article-tools">
       <h3>🛠 ابزارهای مرتبط</h3>
       <div class="tools-grid">
-        <a href="/calc.html" class="tool-card"><span class="tool-icon">🧮</span><span class="tool-title">ماشین حساب فارکس</span><span class="tool-desc">محاسبه حجم، مارجین، سود/زیان</span></a>
+        <a href="/calc" class="tool-card"><span class="tool-icon">🧮</span><span class="tool-title">ماشین حساب فارکس</span><span class="tool-desc">محاسبه حجم، مارجین، سود/زیان</span></a>
         <a href="/" class="tool-card"><span class="tool-icon">📊</span><span class="tool-title">قیمت لحظه‌ای طلا</span><span class="tool-desc">مشاهده قیمت XAU/USD</span></a>
       </div>
     </div>
@@ -68,7 +68,7 @@ import{r as a,i as t,a as s}from"./clock-Y_QwIpLD.js";import{a as l,b as d}from"
         <li><a href="/learn/">پیپ طلا چیست؟</a></li>
         <li><a href="/learn/">لات در طلا چیست؟</a></li>
         <li><a href="/learn/">مدیریت سرمایه در فارکس</a></li>
-        <li><a href="/calc.html">ماشین حساب ریسک به ریوارد</a></li>
+        <li><a href="/calc">ماشین حساب ریسک به ریوارد</a></li>
       </ul>
     </div>
   </article>

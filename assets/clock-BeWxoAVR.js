@@ -5,7 +5,7 @@
         <span></span><span></span><span></span>
       </button>
       <div class="nav" id="navMenu">
-        ${[{href:"/",label:"خانه",key:"home"},{href:"/prices.html",label:"همه قیمت‌ها",key:"prices"},{href:"/calc.html",label:"ماشین حساب",key:"calc"},{href:"/experts.html",label:"اکسپرت‌ها",key:"experts"},{href:"/learn/",label:"آموزش",key:"learn"}].map(n=>`<a href="${n.href}" class="nav-btn ${t===n.key?"active":""}">${n.label}</a>`).join("")}
+        ${[{href:"/",label:"خانه",key:"home"},{href:"/prices",label:"همه قیمت‌ها",key:"prices"},{href:"/calc",label:"ماشین حساب",key:"calc"},{href:"/experts",label:"اکسپرت‌ها",key:"experts"},{href:"/learn/",label:"آموزش",key:"learn"}].map(n=>`<a href="${n.href}" class="nav-btn ${t===n.key?"active":""}">${n.label}</a>`).join("")}
       </div>
       <div class="market-badge open" id="mkBadge">
         <div class="badge-dot"></div>

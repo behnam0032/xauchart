@@ -1,4 +1,4 @@
-import{r as m,i as h,a as u}from"./clock-Y_QwIpLD.js";import{H as t,f as g}from"./api-BF5_4Y-g.js";import{g as w,i as f}from"./calculator-BNxaeBxc.js";const b=a=>new Intl.NumberFormat("fa-IR").format(Math.round(a)),y=(a,s=2)=>new Intl.NumberFormat("en-US",{minimumFractionDigits:s,maximumFractionDigits:s}).format(a),$=(a,s)=>s==="دلار"?y(a,a<10?4:2):b(a);document.getElementById("app").innerHTML=m("home")+`
+import{r as m,i as u,a as h}from"./clock-BeWxoAVR.js";import{H as r,f as g}from"./api-BzjsYfuF.js";import{g as w,i as f}from"./calculator-BNxaeBxc.js";const b=a=>new Intl.NumberFormat("fa-IR").format(Math.round(a)),y=(a,s=2)=>new Intl.NumberFormat("en-US",{minimumFractionDigits:s,maximumFractionDigits:s}).format(a),$=(a,s)=>s==="دلار"?y(a,a<10?4:2):b(a);document.getElementById("app").innerHTML=m("home")+`
 <main class="main">
   <!-- ساعت + سشن‌ها -->
   <div class="clock-bar">
@@ -20,7 +20,7 @@ import{r as m,i as h,a as u}from"./clock-Y_QwIpLD.js";import{H as t,f as g}from"
 
   <!-- قیمت‌ها -->
   <div class="prices-grid" id="pricesGrid">
-    ${[...t.gold,...t.currency,...t.crypto].map(a=>`
+    ${[...r.gold,...r.currency,...r.crypto].map(a=>`
       <div class="price-card loading" id="card-${a}">
         <div class="p-label">در حال بارگذاری...</div>
         <div class="p-val">—</div>
@@ -45,7 +45,7 @@ import{r as m,i as h,a as u}from"./clock-Y_QwIpLD.js";import{H as t,f as g}from"
       مجموعه مقالات آموزشی برای معامله‌گران از مبتدی تا حرفه‌ای. مفاهیم پایه، مدیریت ریسک و نکات کاربردی.
     </p>
     <div class="articles-preview-grid">
-      <a href="/learn/what-is-gold-spread.html" class="article-preview-card">
+      <a href="/learn/what-is-gold-spread" class="article-preview-card">
         <div class="ap-icon">📈</div>
         <div class="ap-content">
           <h3>اسپرد طلا چیست؟</h3>
@@ -53,7 +53,7 @@ import{r as m,i as h,a as u}from"./clock-Y_QwIpLD.js";import{H as t,f as g}from"
           <span class="ap-meta">⏱ ۱۰ دقیقه · مبتدی</span>
         </div>
       </a>
-      <a href="/learn/what-is-pip.html" class="article-preview-card">
+      <a href="/learn/what-is-pip" class="article-preview-card">
         <div class="ap-icon">📏</div>
         <div class="ap-content">
           <h3>پیپ طلا چیست؟</h3>
@@ -61,7 +61,7 @@ import{r as m,i as h,a as u}from"./clock-Y_QwIpLD.js";import{H as t,f as g}from"
           <span class="ap-meta">⏱ ۸ دقیقه · مبتدی</span>
         </div>
       </a>
-      <a href="/learn/what-is-lot.html" class="article-preview-card">
+      <a href="/learn/what-is-lot" class="article-preview-card">
         <div class="ap-icon">📦</div>
         <div class="ap-content">
           <h3>لات در طلا چیست؟</h3>
@@ -69,7 +69,7 @@ import{r as m,i as h,a as u}from"./clock-Y_QwIpLD.js";import{H as t,f as g}from"
           <span class="ap-meta">⏱ ۰ دقیقه · مبتدی تا متوسط</span>
         </div>
       </a>
-      <a href="/learn/risk-management.html" class="article-preview-card">
+      <a href="/learn/risk-management" class="article-preview-card">
         <div class="ap-icon">🛡️</div>
         <div class="ap-content">
           <h3>مدیریت سرمایه</h3>
@@ -83,7 +83,7 @@ import{r as m,i as h,a as u}from"./clock-Y_QwIpLD.js";import{H as t,f as g}from"
     </div>
   </div>
 </main>
-`;h();u();f();async function n(){document.getElementById("errorBar").classList.remove("show");try{const a=await g();k(a)}catch(a){document.getElementById("errorMsg").textContent=a.message||"خطا در دریافت قیمت",document.getElementById("errorBar").classList.add("show")}}window._loadPrices=n;function k({gold:a,currency:s,crypto:d}){const c={};[...a,...s,...d].forEach(e=>{c[e.code]=e}),[...t.gold,...t.currency,...t.crypto].forEach(e=>{const r=document.getElementById(`card-${e}`);if(!r)return;const i=c[e];if(!i){r.classList.remove("loading"),r.innerHTML=`<div class="p-label">${e}</div><div class="p-val" style="font-size:13px;color:var(--muted)">داده موجود نیست</div>`;return}r.classList.remove("loading");const l=Math.abs(i.pct).toFixed(2),o=i.isUp?"+":"−",p=i.isUp?"▲":"▼",v=i.isUp?"up":"down";r.innerHTML=`
+`;u();h();f();async function n(){document.getElementById("errorBar").classList.remove("show");try{const a=await g();k(a)}catch(a){document.getElementById("errorMsg").textContent=a.message||"خطا در دریافت قیمت",document.getElementById("errorBar").classList.add("show")}}window._loadPrices=n;function k({gold:a,currency:s,crypto:d}){const c={};[...a,...s,...d].forEach(e=>{c[e.code]=e}),[...r.gold,...r.currency,...r.crypto].forEach(e=>{const t=document.getElementById(`card-${e}`);if(!t)return;const i=c[e];if(!i){t.classList.remove("loading"),t.innerHTML=`<div class="p-label">${e}</div><div class="p-val" style="font-size:13px;color:var(--muted)">داده موجود نیست</div>`;return}t.classList.remove("loading");const l=Math.abs(i.pct).toFixed(2),o=i.isUp?"+":"−",p=i.isUp?"▲":"▼",v=i.isUp?"up":"down";t.innerHTML=`
       <div class="p-label">${i.icon} ${i.label}</div>
       <div class="p-val">${$(i.price,i.unit)}<span class="p-unit"> ${i.unit}</span></div>
       <div class="p-change ${v}">${p} ${o}${l}%</div>

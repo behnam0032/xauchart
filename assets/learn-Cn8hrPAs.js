@@ -1,4 +1,4 @@
-import{r as a,i as c,a as s}from"./clock-Y_QwIpLD.js";document.getElementById("app").innerHTML=a("learn")+`
+import{r as a,i as c,a as s}from"./clock-BeWxoAVR.js";document.getElementById("app").innerHTML=a("learn")+`
 <main class="main">
   <div class="page-header">
     <h1>📚 آموزش فارکس و معاملات طلا</h1>
@@ -6,28 +6,28 @@ import{r as a,i as c,a as s}from"./clock-Y_QwIpLD.js";document.getElementById("a
   </div>
   
   <div class="articles-grid">
-    <a href="/learn/what-is-gold-spread.html" class="article-card">
+    <a href="/learn/what-is-gold-spread" class="article-card">
       <div class="article-card-icon">📈</div>
       <h3>اسپرد طلا چیست؟</h3>
       <p>آموزش کامل Spread در معاملات XAU/USD، تفاوت اسپرد ثابت و شناور</p>
       <span class="article-card-meta">⏱ ۱۰ دقیقه · مبتدی</span>
     </a>
 
-    <a href="/learn/what-is-pip.html" class="article-card">
+    <a href="/learn/what-is-pip" class="article-card">
       <div class="article-card-icon">📏</div>
       <h3>پیپ طلا چیست؟</h3>
       <p>محاسبه و درک مفهوم پیپ در معاملات طلا، تفاوت پیپ و پوینت</p>
       <span class="article-card-meta">⏱ ۸ دقیقه · مبتدی</span>
     </a>
 
-    <a href="/learn/what-is-lot.html" class="article-card">
+    <a href="/learn/what-is-lot" class="article-card">
       <div class="article-card-icon">📦</div>
       <h3>لات در طلا چیست؟</h3>
       <p>انواع لات و نحوه انتخاب حجم مناسب معامله</p>
       <span class="article-card-meta">⏱ ۱۰ دقیقه · مبتدی تا متوسط</span>
     </a>
 
-    <a href="/learn/risk-management.html" class="article-card">
+    <a href="/learn/risk-management" class="article-card">
       <div class="article-card-icon">🛡️</div>
       <h3>مدیریت سرمایه</h3>
       <p>اصول مدیریت ریسک و سرمایه در فارکس، تعیین حد ضرر و R:R</p>

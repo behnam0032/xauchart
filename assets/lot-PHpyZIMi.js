@@ -1,4 +1,4 @@
-import{r as t,i as l,a}from"./clock-Y_QwIpLD.js";import{a as i,b as s}from"./seo-BHAbaErS.js";document.getElementById("app").innerHTML=t("learn")+`
+import{r as t,i as l,a}from"./clock-BeWxoAVR.js";import{a as i,b as s}from"./seo-BHAbaErS.js";document.getElementById("app").innerHTML=t("learn")+`
 <main class="main">
   <article class="article-content">
     <header class="article-header">
@@ -175,7 +175,7 @@ import{r as t,i as l,a}from"./clock-Y_QwIpLD.js";import{a as i,b as s}from"./seo
 
     <h2>نکات طلایی برای انتخاب حجم</h2>
     <ul class="check-list">
-      <li>همیشه از <a href="/calc.html" class="internal-link">ماشین حساب فارکس</a> استفاده کنید</li>
+      <li>همیشه از <a href="/calc" class="internal-link">ماشین حساب فارکس</a> استفاده کنید</li>
       <li>برای شروع، با ۰.۰۱ لات (میکرو) شروع کنید</li>
       <li>هرگز بیش از ۲٪ ریسک نکنید</li>
       <li>در زمان اخبار مهم، حجم را نصف کنید</li>
@@ -211,17 +211,17 @@ import{r as t,i as l,a}from"./clock-Y_QwIpLD.js";import{a as i,b as s}from"./seo
     <div class="article-tools">
       <h3>🛠 ابزارهای مرتبط</h3>
       <div class="tools-grid">
-        <a href="/calc.html" class="tool-card">
+        <a href="/calc" class="tool-card">
           <span class="tool-icon">🧮</span>
           <span class="tool-title">ماشین حساب حجم معامله</span>
           <span class="tool-desc">محاسبه خودکار حجم بر اساس ریسک و حد ضرر</span>
         </a>
-        <a href="/learn/what-is-pip.html" class="tool-card">
+        <a href="/learn/what-is-pip" class="tool-card">
           <span class="tool-icon">📏</span>
           <span class="tool-title">پیپ طلا چیست؟</span>
           <span class="tool-desc">آموزش کامل Pip و محاسبه آن</span>
         </a>
-        <a href="/learn/risk-management.html" class="tool-card">
+        <a href="/learn/risk-management" class="tool-card">
           <span class="tool-icon">🛡️</span>
           <span class="tool-title">مدیریت سرمایه</span>
           <span class="tool-desc">اصول مدیریت ریسک و سرمایه</span>
@@ -232,10 +232,10 @@ import{r as t,i as l,a}from"./clock-Y_QwIpLD.js";import{a as i,b as s}from"./seo
     <div class="related-articles">
       <h3>📚 پیشنهاد مطالعه</h3>
       <ul class="article-list">
-        <li><a href="/learn/what-is-pip.html">پیپ طلا چیست؟</a></li>
-        <li><a href="/learn/what-is-gold-spread.html">اسپرد طلا چیست؟</a></li>
-        <li><a href="/learn/risk-management.html">مدیریت سرمایه در فارکس</a></li>
-        <a href="/calc.html"><li>ماشین حساب فارکس</li></a>
+        <li><a href="/learn/what-is-pip">پیپ طلا چیست؟</a></li>
+        <li><a href="/learn/what-is-gold-spread">اسپرد طلا چیست؟</a></li>
+        <li><a href="/learn/risk-management">مدیریت سرمایه در فارکس</a></li>
+        <a href="/calc"><li>ماشین حساب فارکس</li></a>
       </ul>
     </div>
   </article>

@@ -1,4 +1,4 @@
-import{r as l,i as a,a as i}from"./clock-Y_QwIpLD.js";import{a as s,b as t}from"./seo-BHAbaErS.js";document.getElementById("app").innerHTML=l("learn")+`
+import{r as l,i as a,a as i}from"./clock-BeWxoAVR.js";import{a as s,b as t}from"./seo-BHAbaErS.js";document.getElementById("app").innerHTML=l("learn")+`
 <main class="main">
   <article class="article-content">
     <header class="article-header">
@@ -83,7 +83,7 @@ import{r as l,i as a,a as i}from"./clock-Y_QwIpLD.js";import{a as s,b as t}from"
       حجم معامله باید بر اساس فاصله حد ضرر محاسبه شود، نه بر اساس طمع!
     </p>
     <p>
-      از <a href="/calc.html" class="internal-link">ماشین حساب فارکس</a> ما استفاده کنید تا 
+      از <a href="/calc" class="internal-link">ماشین حساب فارکس</a> ما استفاده کنید تا 
       حجم مناسب را بر اساس ریسک مجاز و فاصله SL محاسبه کنید.
     </p>
 
@@ -247,12 +247,12 @@ import{r as l,i as a,a as i}from"./clock-Y_QwIpLD.js";import{a as s,b as t}from"
     <div class="article-tools">
       <h3>🛠 ابزارهای مرتبط</h3>
       <div class="tools-grid">
-        <a href="/calc.html" class="tool-card">
+        <a href="/calc" class="tool-card">
           <span class="tool-icon">🧮</span>
           <span class="tool-title">ماشین حساب ریسک</span>
           <span class="tool-desc">محاسبه Drawdown، ریکاوری و حجم معامله</span>
         </a>
-        <a href="/learn/what-is-lot.html" class="tool-card">
+        <a href="/learn/what-is-lot" class="tool-card">
           <span class="tool-icon">📦</span>
           <span class="tool-title">لات در طلا چیست؟</span>
           <span class="tool-desc">آموزش محاسبه حجم معامله</span>
@@ -268,10 +268,10 @@ import{r as l,i as a,a as i}from"./clock-Y_QwIpLD.js";import{a as s,b as t}from"
     <div class="related-articles">
       <h3>📚 پیشنهاد مطالعه</h3>
       <ul class="article-list">
-        <li><a href="/learn/what-is-lot.html">لات در طلا چیست؟</a></li>
-        <li><a href="/learn/what-is-pip.html">پیپ طلا چیست؟</a></li>
-        <li><a href="/learn/what-is-gold-spread.html">اسپرد طلا چیست؟</a></li>
-        <li><a href="/calc.html">ماشین حساب فارکس</a></li>
+        <li><a href="/learn/what-is-lot">لات در طلا چیست؟</a></li>
+        <li><a href="/learn/what-is-pip">پیپ طلا چیست؟</a></li>
+        <li><a href="/learn/what-is-gold-spread">اسپرد طلا چیست؟</a></li>
+        <li><a href="/calc">ماشین حساب فارکس</a></li>
       </ul>
     </div>
   </article>
