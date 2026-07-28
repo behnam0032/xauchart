@@ -90,7 +90,7 @@ import{r as s,i as a,a as i}from"./clock-BeWxoAVR.js";document.getElementById("a
     <div class="ea-feature-badge">02</div>
     <h3>AUTO TAKE PROFIT</h3>
     <h4>حد سود با نسبت ریسک‌به‌ریوارد دلخواه</h4>
-    <p>خط TP همزمان با SL و بر اساس نسبت RR انتخابی شما (مثلاً ۱ به ۲) ترسیم می‌شه. اگر ۱ دلار ریسک می‌کنید، هدف سود خودش رو با ۲۰ دلار تنظیم می‌کنه.</p>
+    <p>خط TP همزمان با SL و بر اساس نسبت RR انتخابی شما (مثلاً ۱ به ۲) ترسیم می‌شه. اگر ۱۰ دلار ریسک می‌کنید، هدف سود خودش رو با ۲۰ دلار تنظیم می‌کنه.</p>
   </div>
   <div class="ea-feature-card">
     <div class="ea-feature-badge">03</div>
