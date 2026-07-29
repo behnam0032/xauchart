@@ -1,4 +1,4 @@
-import{r as t,i as l,a}from"./clock-UurEc_Z8.js";import{a as i,b as s}from"./seo-BHAbaErS.js";document.getElementById("app").innerHTML=t("learn")+`
+import{r as t,i as l,a}from"./clock-xh04v_bv.js";import{a as i,b as s}from"./seo-BHAbaErS.js";document.getElementById("app").innerHTML=t("learn")+`
 <main class="main">
   <article class="article-content">
     <header class="article-header">
