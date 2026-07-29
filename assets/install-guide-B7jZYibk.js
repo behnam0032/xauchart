@@ -1,4 +1,4 @@
-import{r as s,i as o,a as t}from"./clock-CCwc8sip.js";document.getElementById("app").innerHTML=s("experts")+`
+import{r as s,i as o,a as t}from"./clock-UurEc_Z8.js";document.getElementById("app").innerHTML=s("experts")+`
 <main class="main">
   <div class="page-header">
     <h1>📚 آموزش نصب اکسپرت در متاتریدر</h1>

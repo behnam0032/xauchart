@@ -1,4 +1,4 @@
-import{r as c,i as d,a as l}from"./clock-CCwc8sip.js";import{f as m}from"./api-BzjsYfuF.js";const p=r=>new Intl.NumberFormat("fa-IR").format(Math.round(r)),u=(r,t=2)=>new Intl.NumberFormat("en-US",{minimumFractionDigits:t,maximumFractionDigits:t}).format(r),g=(r,t)=>t==="دلار"?u(r,r<10?4:2):p(r);document.getElementById("app").innerHTML=c("prices")+`
+import{r as c,i as d,a as l}from"./clock-UurEc_Z8.js";import{f as m}from"./api-BzjsYfuF.js";const p=r=>new Intl.NumberFormat("fa-IR").format(Math.round(r)),u=(r,t=2)=>new Intl.NumberFormat("en-US",{minimumFractionDigits:t,maximumFractionDigits:t}).format(r),g=(r,t)=>t==="دلار"?u(r,r<10?4:2):p(r);document.getElementById("app").innerHTML=c("prices")+`
 <main class="main">
   <div class="page-header"><h1>📊 همه قیمت‌ها</h1><p>قیمت لحظه‌ای طلا، سکه، ارز و ارز دیجیتال</p></div>
   <div class="error-bar" id="errorBar">❌ <span id="errorMsg">خطا</span><button onclick="window._loadAll()" style="margin-right:auto;background:none;border:none;color:inherit;cursor:pointer;font-size:12px;text-decoration:underline">تلاش مجدد</button></div>
