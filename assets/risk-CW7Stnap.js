@@ -1,4 +1,4 @@
-import{r as l,i as a,a as i}from"./clock-xh04v_bv.js";import{a as s,b as t}from"./seo-BHAbaErS.js";document.getElementById("app").innerHTML=l("learn")+`
+import{r as a,i as l,a as i}from"./clock-Dyjh4wLt.js";import{a as s,b as t}from"./seo-BHAbaErS.js";import{s as e}from"./anchor-copy-JqxzkbF8.js";document.getElementById("app").innerHTML=a("learn")+`
 <main class="main">
   <article class="article-content">
     <header class="article-header">
@@ -12,49 +12,72 @@ import{r as l,i as a,a as i}from"./clock-xh04v_bv.js";import{a as s,b as t}from"
       <div class="article-meta">
         <span>⏱ زمان مطالعه: ۱۲ دقیقه</span>
         <span>📊 سطح: همه سطوح</span>
-        <span>📅 به‌روزرسانی: تیر ۱۴۰</span>
+        <span>📅 به‌روزرسانی: تیر ۱۰۵</span>
       </div>
     </header>
 
+    <!-- فهرست مطالب -->
+    <div class="toc-box">
+      <h3>📑 فهرست مطالب</h3>
+      <ul>
+        <li><a href="#why-risk-management">چرا مدیریت سرمایه این‌قدر مهم است؟</a></li>
+        <li><a href="#golden-rule">قانون طلایی: ریسک ۱-٪</a></li>
+        <li><a href="#four-principles">چهار اصل اساسی مدیریت ریسک</a></li>
+        <li><a href="#drawdown">محاسبه Drawdown و ریکاوری</a></li>
+        <li><a href="#strategies">استراتژی‌های عملی مدیریت سرمایه</a></li>
+        <li><a href="#deadly-mistakes">اشتباهات مرگبار در مدیریت ریسک</a></li>
+        <li><a href="#checklist">چک‌لیست قبل از هر معامله</a></li>
+        <li><a href="#golden-tips">نکات طلایی برای حفظ سرمایه</a></li>
+        <li><a href="#faq">سوالات متداول</a></li>
+      </ul>
+    </div>
+
     <div class="alert-box warning">
-      ⚠️ آمار تکان‌دهنده: ۹۰٪ معامله‌گران تازه‌کار در سال اول ضرر می‌کنند. 
+      ️ آمار تکان‌دهنده: ۰٪ معامله‌گران تازه‌کار در سال اول ضرر می‌کنند. 
       دلیل اصلی؟ عدم رعایت اصول مدیریت سرمایه!
     </div>
 
-    <h2>چرا مدیریت سرمایه این‌قدر مهم است؟</h2>
+    <h2 id="why-risk-management">
+      چرا مدیریت سرمایه این‌قدر مهم است؟
+      <a href="#why-risk-management" class="anchor-link" aria-label="لینک به این بخش">#</a>
+    </h2>
     <p>
       بیایید با یک مثال شروع کنیم:
     </p>
     <p>
-      فرض کنید ۱۰,۰۰۰ دلار سرمایه دارید و در یک معامله ۵۰٪ ریسک می‌کنید (۵,۰۰۰ دلار). 
-      اگر ضرر کنید، برای برگشت به نقطه سر‌به‌سر باید <strong>۱۰۰٪ سود</strong> کنید!
+      فرض کنید ۱۰,۰۰۰ دلار سرمایه دارید و در یک معامله ۵۰٪ ریسک می‌کنید (,۰۰۰ دلار). 
+      اگر ضرر کنید، برای برگشت به نقطه سر‌به‌سر باید <strong>۱۰٪ سود</strong> کنید!
     </p>
     <div class="code-block">
-      <code>ضرر ۵۰٪ → نیاز به سود ۱۰۰٪ برای جبران</code>
+      <code>ضرر ۰٪ → نیاز به سود ۱۰۰٪ برای جبران</code>
     </div>
     <p>
-      اما اگر فقط ۲٪ ریسک کنید (۲۰۰ دلار)، برای جبران فقط به ۲.۰۴٪ سود نیاز دارید.
+      اما اگر فقط ۲٪ ریسک کنید (۰۰ دلار)، برای جبران فقط به ۲.۰۴٪ سود نیاز دارید.
     </p>
 
-    <h2>قانون طلایی: ریسک ۱-۲٪</h2>
+    <h2 id="golden-rule">
+      قانون طلایی: ریسک ۱-۲٪
+      <a href="#golden-rule" class="anchor-link" aria-label="لینک به این بخش">#</a>
+    </h2>
     <p>
       حرفه‌ای‌ها هیچ‌گاه بیش از ۱-۲٪ از سرمایه خود را در یک معامله ریسک نمی‌کنند. 
       این یعنی:
     </p>
     <ul class="check-list">
-      <li>سرمایه ۱,۰۰۰ دلار → ریسک ۱۰-۲۰ دلار در هر معامله</li>
-      <li>سرمایه ۱۰,۰۰ دلار → ریسک ۰۰-۲۰۰ دلار</li>
+      <li>سرمایه ۱,۰۰ دلار → ریسک ۱۰-۲۰ دلار در هر معامله</li>
+      <li>سرمایه ۱۰,۰۰۰ دلار → ریسک ۱۰۰-۲۰۰ دلار</li>
       <li>سرمایه ۵۰,۰۰۰ دلار → ریسک ۵۰۰-۱,۰۰۰ دلار</li>
     </ul>
-
     <div class="alert-box info">
       💡 چرا ۱-۲٪؟ چون حتی اگر ۱۰ معامله پشت سر هم ضرر کنید، 
       هنوز ۸۰-۹۰٪ سرمایه‌تان باقی می‌ماند و می‌توانید ادامه دهید.
     </div>
 
-    <h2>چهار اصل اساسی مدیریت ریسک</h2>
-
-    <h3>۱. تعیین حد ضرر (Stop Loss) الزامی است</h3>
+    <h2 id="four-principles">
+      چهار اصل اساسی مدیریت ریسک
+      <a href="#four-principles" class="anchor-link" aria-label="لینک به این بخش">#</a>
+    </h2>
+    <h3>. تعیین حد ضرر (Stop Loss) الزامی است</h3>
     <p>
       هیچ‌گاه بدون حد ضرر معامله نکنید! حد ضرر مثل کمربند ایمنی است. 
       ممکن است هرگز به آن نیاز نداشته باشید، اما وقتی لازم شود، نجات‌بخش است.
@@ -72,7 +95,7 @@ import{r as l,i as a,a as i}from"./clock-xh04v_bv.js";import{a as s,b as t}from"
       حداقل نسبت قابل قبول ۱:۲ است.
     </p>
     <div class="code-block">
-      <code>اگر ۵۰ پیپ ریسک می‌کنید، حداقل ۱۰۰ پیپ سود هدف داشته باشید</code>
+      <code>اگر ۵۰ پیپ ریسک می‌کنید، حداقل ۱۰ پیپ سود هدف داشته باشید</code>
     </div>
     <p>
       با نسبت ۱:۲، حتی اگر فقط ۴۰٪ معاملاتتان سودده باشد، باز هم سود می‌کنید!
@@ -93,12 +116,14 @@ import{r as l,i as a,a as i}from"./clock-xh04v_bv.js";import{a as s,b as t}from"
       بهتر است همزمان در ۲-۳ معامله مختلف با ریسک کنترل‌شده وارد شوید.
     </p>
 
-    <h2>محاسبه Drawdown و ریکاوری</h2>
+    <h2 id="drawdown">
+      محاسبه Drawdown و ریکاوری
+      <a href="#drawdown" class="anchor-link" aria-label="لینک به این بخش">#</a>
+    </h2>
     <p>
       Drawdown یعنی افت سرمایه از بالاترین نقطه. 
       درک آن برای حفظ انگیزه مهم است:
     </p>
-
     <table class="data-table">
       <thead>
         <tr><th>ضرر (Drawdown)</th><th>سود لازم برای بازگشت</th></tr>
@@ -108,38 +133,39 @@ import{r as l,i as a,a as i}from"./clock-xh04v_bv.js";import{a as s,b as t}from"
         <tr><td>۲۰٪</td><td>۲۵٪</td></tr>
         <tr><td>۳۰٪</td><td>۴۲.۹٪</td></tr>
         <tr><td>۵۰٪</td><td>۱۰۰٪</td></tr>
-        <tr><td>۷۰٪</td><td>۲۳۳٪</td></tr>
+        <tr><td>۰٪</td><td>۲۳٪</td></tr>
         <tr><td>۹۰٪</td><td>۹۰۰٪</td></tr>
       </tbody>
     </table>
-
     <div class="alert-box warning">
       ⚠️ همان‌طور که می‌بینید، هرچه ضرر بیشتر باشد، بازگشت سخت‌تر می‌شود. 
       به همین دلیل است که ریسک ۱-۲٪ این‌قدر مهم است!
     </div>
 
-    <h2>استراتژی‌های عملی مدیریت سرمایه</h2>
-
+    <h2 id="strategies">
+      استراتژی‌های عملی مدیریت سرمایه
+      <a href="#strategies" class="anchor-link" aria-label="لینک به این بخش">#</a>
+    </h2>
     <h3>استراتژی ۱: روش ثابت (Fixed Risk)</h3>
     <p>
       در هر معامله مقدار ثابتی ریسک می‌کنید (مثلاً همیشه ۲٪). 
       این ساده‌ترین و ایمن‌ترین روش برای مبتدی‌ها است.
     </p>
-
     <h3>استراتژی ۲: روش درصدی از موجودی</h3>
     <p>
       بعد از هر سود یا ضرر، حجم معامله را بر اساس موجودی جدید تنظیم می‌کنید. 
       این روش به صورت خودکار ریسک را مدیریت می‌کند.
     </p>
-
     <h3>استراتژی ۳: روش پلکانی (Pyramiding)</h3>
     <p>
       وقتی معامله در سود است، به تدریج حجم اضافه می‌کنید. 
       اما فقط معامله‌گران حرفه‌ای باید از این روش استفاده کنند.
     </p>
 
-    <h2>اشتباهات مرگبار در مدیریت ریسک</h2>
-
+    <h2 id="deadly-mistakes">
+      اشتباهات مرگبار در مدیریت ریسک
+      <a href="#deadly-mistakes" class="anchor-link" aria-label="لینک به این بخش">#</a>
+    </h2>
     <div class="alert-box warning">
       <strong>❌ اشتباه ۱:</strong> جابجا کردن حد ضرر (Moving SL)
       <p style="margin-top: 8px; font-size: 13px;">
@@ -147,7 +173,6 @@ import{r as l,i as a,a as i}from"./clock-xh04v_bv.js";import{a as s,b as t}from"
         این کار مثل این است که ترمز ماشین را در سراشیبی رها کنید!
       </p>
     </div>
-
     <div class="alert-box warning">
       <strong>❌ اشتباه ۲:</strong> انتقام از بازار (Revenge Trading)
       <p style="margin-top: 8px; font-size: 13px;">
@@ -155,7 +180,6 @@ import{r as l,i as a,a as i}from"./clock-xh04v_bv.js";import{a as s,b as t}from"
         این سریع‌ترین راه برای از دست دادن کل سرمایه است.
       </p>
     </div>
-
     <div class="alert-box warning">
       <strong>❌ اشتباه ۳:</strong> عدم ثبت معاملات
       <p style="margin-top: 8px; font-size: 13px;">
@@ -163,7 +187,6 @@ import{r as l,i as a,a as i}from"./clock-xh04v_bv.js";import{a as s,b as t}from"
         حتماً از ژورنال معاملاتی استفاده کنید.
       </p>
     </div>
-
     <div class="alert-box warning">
       <strong>❌ اشتباه ۴:</strong> معامله در زمان اخبار مهم
       <p style="margin-top: 8px; font-size: 13px;">
@@ -172,19 +195,25 @@ import{r as l,i as a,a as i}from"./clock-xh04v_bv.js";import{a as s,b as t}from"
       </p>
     </div>
 
-    <h2>چک‌لیست قبل از هر معامله</h2>
+    <h2 id="checklist">
+      چک‌لیست قبل از هر معامله
+      <a href="#checklist" class="anchor-link" aria-label="لینک به این بخش">#</a>
+    </h2>
     <p>
       قبل از کلیک روی دکمه Buy/Sell، این سوالات را از خود بپرسید:
     </p>
     <ul class="check-list">
-      <li>✓ آیا حد ضرر را مشخص کرده‌ام؟</li>
-      <li>✓ آیا حد سود من حداقل ۲ برابر حد ضرر است؟ (R:R ≥ 1:2)</li>
-      <li>✓ آیا حجم معامله بر اساس ۱-۲٪ ریسک محاسبه شده؟</li>
-      <li>✓ آیا الان زمان مناسبی است؟ (اخبار مهم نیست)</li>
-      <li>✓ آیا از نظر روحی آرام هستم؟ (عصبی یا هیجان‌زده نیستم)</li>
+      <li>آیا حد ضرر را مشخص کرده‌ام؟</li>
+      <li>آیا حد سود من حداقل ۲ برابر حد ضرر است؟ (R:R ≥ 1:2)</li>
+      <li>آیا حجم معامله بر اساس ۱-۲٪ ریسک محاسبه شده؟</li>
+      <li>آیا الان زمان مناسبی است؟ (اخبار مهم نیست)</li>
+      <li>آیا از نظر روحی آرام هستم؟ (عصبی یا هیجان‌زده نیستم)</li>
     </ul>
 
-    <h2>نکات طلایی برای حفظ سرمایه</h2>
+    <h2 id="golden-tips">
+      نکات طلایی برای حفظ سرمایه
+      <a href="#golden-tips" class="anchor-link" aria-label="لینک به این بخش">#</a>
+    </h2>
     <div class="pros-cons">
       <div class="pros">
         <h4>✅ کارهایی که باید انجام دهید</h4>
@@ -210,8 +239,10 @@ import{r as l,i as a,a as i}from"./clock-xh04v_bv.js";import{a as s,b as t}from"
       </div>
     </div>
 
-    <h2>سوالات متداول</h2>
-
+    <h2 id="faq">
+      سوالات متداول
+      <a href="#faq" class="anchor-link" aria-label="لینک به این بخش">#</a>
+    </h2>
     <div class="faq-item">
       <h3>آیا می‌توانم در یک روز چندین معامله باز کنم؟</h3>
       <p>
@@ -219,7 +250,6 @@ import{r as l,i as a,a as i}from"./clock-xh04v_bv.js";import{a as s,b as t}from"
         مثلاً اگر ۳ معامله دارید، هر کدام حداکثر ۲٪ ریسک داشته باشند.
       </p>
     </div>
-
     <div class="faq-item">
       <h3>اگر حد ضرر من زده شد، چه کار کنم؟</h3>
       <p>
@@ -227,7 +257,6 @@ import{r as l,i as a,a as i}from"./clock-xh04v_bv.js";import{a as s,b as t}from"
         استراحت کنید، تحلیل خود را بررسی کنید و وقتی آرام شدید، معامله بعدی را با همان قوانین شروع کنید.
       </p>
     </div>
-
     <div class="faq-item">
       <h3>چند درصد از سرمایه را باید در فارکس بگذارم؟</h3>
       <p>
@@ -235,7 +264,6 @@ import{r as l,i as a,a as i}from"./clock-xh04v_bv.js";import{a as s,b as t}from"
         هرگز با پول اجاره، وام یا قرض معامله نکنید.
       </p>
     </div>
-
     <div class="faq-item">
       <h3>آیا مدیریت سرمایه برای اسکالپینگ هم مهم است؟</h3>
       <p>
@@ -253,7 +281,7 @@ import{r as l,i as a,a as i}from"./clock-xh04v_bv.js";import{a as s,b as t}from"
           <span class="tool-desc">محاسبه Drawdown، ریکاوری و حجم معامله</span>
         </a>
         <a href="/learn/what-is-lot" class="tool-card">
-          <span class="tool-icon">📦</span>
+          <span class="tool-icon"></span>
           <span class="tool-title">لات در طلا چیست؟</span>
           <span class="tool-desc">آموزش محاسبه حجم معامله</span>
         </a>
@@ -275,4 +303,5 @@ import{r as l,i as a,a as i}from"./clock-xh04v_bv.js";import{a as s,b as t}from"
       </ul>
     </div>
   </article>
-</main>`;a();i();s({headline:"مدیریت سرمایه در معاملات طلا | آموزش کامل Risk Management",description:"اصول حرفه‌ای مدیریت ریسک، تعیین حد ضرر و نسبت R:R برای سوددهی مستمر",datePublished:"2026-07-09"});t([{q:"آیا می‌توانم در یک روز چندین معامله باز کنم؟",a:"بله، اما مجموع ریسک همه معاملات نباید از ۵-۶٪ بیشتر شود. مثلاً اگر ۳ معامله دارید، هر کدام حداکثر ۲٪ ریسک داشته باشند."},{q:"اگر حد ضرر من زده شد، چه کار کنم؟",a:"بپذیرید که ضرر بخشی از معامله‌گری است. استراحت کنید، تحلیل خود را بررسی کنید و وقتی آرام شدید، معامله بعدی را با همان قوانین شروع کنید."},{q:"چند درصد از سرمایه را باید در فارکس بگذارم؟",a:"فقط پولی را وارد کنید که اگر تمام آن را از دست دادید، زندگی‌تان تحت تأثیر قرار نگیرد. هرگز با پول قرضی معامله نکنید."},{q:"آیا مدیریت سرمایه برای اسکالپینگ هم مهم است؟",a:"حتی بیشتر! در اسکالپینگ چون تعداد معاملات زیاد است، رعایت ریسک ۱٪ حیاتی است. یک ضرر بزرگ می‌تواند ده‌ها سود کوچک را از بین ببرد."}]);
+</main>
+`;l();i();e();s({headline:"مدیریت سرمایه در معاملات طلا | آموزش کامل Risk Management",description:"اصول حرفه‌ای مدیریت ریسک، تعیین حد ضرر و نسبت R:R برای سوددهی مستمر",datePublished:"2026-07-09"});t([{q:"آیا می‌توانم در یک روز چندین معامله باز کنم؟",a:"بله، اما مجموع ریسک همه معاملات نباید از -۶٪ بیشتر شود. مثلاً اگر ۳ معامله دارید، هر کدام حداکثر ٪ ریسک داشته باشند."},{q:"اگر حد ضرر من زده شد، چه کار کنم؟",a:"بپذیرید که ضرر بخشی از معامله‌گری است. استراحت کنید، تحلیل خود را بررسی کنید و وقتی آرام شدید، معامله بعدی را با همان قوانین شروع کنید."},{q:"چند درصد از سرمایه را باید در فارکس بگذارم؟",a:"فقط پولی را وارد کنید که اگر تمام آن را از دست دادید، زندگی‌تان تحت تأثیر قرار نگیرد. هرگز با پول قرضی معامله نکنید."},{q:"آیا مدیریت سرمایه برای اسکالپینگ هم مهم است؟",a:"حتی بیشتر! در اسکالپینگ چون تعداد معاملات زیاد است، رعایت ریسک ۱٪ حیاتی است. یک ضرر بزرگ می‌تواند ده‌ها سود کوچک را از بین ببرد."}]);

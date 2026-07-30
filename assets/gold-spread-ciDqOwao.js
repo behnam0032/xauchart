@@ -1,7 +1,4 @@
-import{r as c,i as d,a as n}from"./clock-xh04v_bv.js";import{a as h,b as p}from"./seo-BHAbaErS.js";let i=!1;function f(){if(i)return;i=!0;const s=document.querySelectorAll(".anchor-link");s.length!==0&&s.forEach(a=>{a.addEventListener("click",async t=>{t.preventDefault();const e=a.getAttribute("href");if(!e)return;const o=window.location.origin+window.location.pathname+e;await u(o)?r("لینک بخش کپی شد ✓"):r("خطا در کپی لینک","error");const l=document.querySelector(e);l&&setTimeout(()=>{l.scrollIntoView({behavior:"smooth",block:"start"})},100)})})}async function u(s){try{if(navigator.clipboard&&window.isSecureContext)return await navigator.clipboard.writeText(s),!0}catch(a){console.warn("Clipboard API failed, using fallback:",a)}try{const a=document.createElement("textarea");a.value=s,a.style.cssText="position:fixed;opacity:0;left:-9999px",document.body.appendChild(a),a.focus(),a.select();const t=document.execCommand("copy");return document.body.removeChild(a),t}catch(a){return console.error("Fallback copy failed:",a),!1}}function r(s,a="success"){const t=document.querySelector(".toast-notification");t&&t.remove();const e=document.createElement("div");e.className=`toast-notification toast-${a}`,e.innerHTML=`
-    <span class="toast-icon">${a==="success"?"✓":"✕"}</span>
-    <span class="toast-message">${s}</span>
-  `,document.body.appendChild(e),requestAnimationFrame(()=>{e.classList.add("toast-show")}),setTimeout(()=>{e.classList.remove("toast-show"),setTimeout(()=>e.remove(),300)},2500)}document.getElementById("app").innerHTML=c("learn")+`
+import{r as a,i as l,a as s}from"./clock-Dyjh4wLt.js";import{a as i,b as e}from"./seo-BHAbaErS.js";import{s as r}from"./anchor-copy-JqxzkbF8.js";document.getElementById("app").innerHTML=a("learn")+`
 <main class="main">
   <article class="article-content">
     <header class="article-header">
@@ -155,4 +152,4 @@ import{r as c,i as d,a as n}from"./clock-xh04v_bv.js";import{a as h,b as p}from"
     </div>
   </article>
 </main>
-`;d();n();f();h({headline:"اسپرد طلا چیست؟ آموزش کامل Spread در معاملات XAU/USD",description:"آموزش کامل اسپرد طلا، تفاوت اسپرد ثابت و شناور و نحوه کاهش هزینه معاملات",datePublished:"2026-07-29"});p([{q:"آیا اسپرد همیشه ثابت است؟",a:"خیر، در بیشتر بروکرها اسپرد شناور است و با شرایط بازار تغییر می‌کند."},{q:"آیا اسپرد روی حد سود تأثیر دارد؟",a:"بله، معامله ابتدا باید هزینه اسپرد را جبران کند."},{q:"بهترین زمان برای اسپرد پایین؟",a:"ساعات هم‌پوشانی سشن لندن و نیویورک."}]);
+`;l();s();r();i({headline:"اسپرد طلا چیست؟ آموزش کامل Spread در معاملات XAU/USD",description:"آموزش کامل اسپرد طلا، تفاوت اسپرد ثابت و شناور و نحوه کاهش هزینه معاملات",datePublished:"2026-07-29"});e([{q:"آیا اسپرد همیشه ثابت است؟",a:"خیر، در بیشتر بروکرها اسپرد شناور است و با شرایط بازار تغییر می‌کند."},{q:"آیا اسپرد روی حد سود تأثیر دارد؟",a:"بله، معامله ابتدا باید هزینه اسپرد را جبران کند."},{q:"بهترین زمان برای اسپرد پایین؟",a:"ساعات هم‌پوشانی سشن لندن و نیویورک."}]);
