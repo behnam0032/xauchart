@@ -1,4 +1,104 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <circle cx="16" cy="16" r="16" fill="#D4AF37"/>
-  <text x="16" y="22" text-anchor="middle" font-size="16" font-weight="bold" fill="#0C0C10" font-family="sans-serif">Au</text>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 500 500"
+  width="500"
+  height="500"
+  fill="none"
+>
+  <defs>
+
+    <!-- Premium gold -->
+    <linearGradient
+      id="gold"
+      x1="40"
+      y1="40"
+      x2="460"
+      y2="460"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset="0" stop-color="#FFF3A0"/>
+      <stop offset="0.25" stop-color="#FFD84A"/>
+      <stop offset="0.55" stop-color="#EAB92C"/>
+      <stop offset="0.8" stop-color="#C99618"/>
+      <stop offset="1" stop-color="#F5D65A"/>
+    </linearGradient>
+
+    <!-- Dark metallic -->
+    <linearGradient
+      id="dark"
+      x1="40"
+      y1="50"
+      x2="460"
+      y2="460"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset="0" stop-color="#667085"/>
+      <stop offset="0.5" stop-color="#344054"/>
+      <stop offset="1" stop-color="#171B24"/>
+    </linearGradient>
+
+    <!-- Very subtle shadow -->
+    <filter
+      id="shadow"
+      x="-20%"
+      y="-20%"
+      width="140%"
+      height="140%"
+    >
+      <feDropShadow
+        dx="0"
+        dy="8"
+        stdDeviation="8"
+        flood-color="#000000"
+        flood-opacity="0.3"
+      />
+    </filter>
+
+  </defs>
+
+  <!-- ================================================= -->
+  <!-- X SYMBOL (FAVICON VERSION - MAXIMIZED) -->
+  <!-- ================================================= -->
+
+  <!-- 
+    مختصات paths دوباره محاسبه شده‌اند تا X کل فضای 500x500 را پر کند.
+    مرکز ثقل روی 250,250 تنظیم شده است.
+  -->
+  <g filter="url(#shadow)">
+
+    <!-- Dark diagonal (ضخیم‌تر و بزرگتر) -->
+    <path
+      d="
+        M 65 55
+        L 155 55
+        L 435 445
+        L 345 445
+        Z
+      "
+      fill="url(#dark)"
+    />
+
+    <!-- Gold diagonal (ضخیم‌تر و بزرگتر) -->
+    <path
+      d="
+        M 345 55
+        L 435 55
+        L 155 445
+        L 65 445
+        Z
+      "
+      fill="url(#gold)"
+    />
+
+    <!-- Small precision cut (برای حفظ جزئیات طراحی اصلی) -->
+    <path
+      d="M 68 442 L 348 58"
+      stroke="#111827"
+      stroke-width="5"
+      stroke-linecap="round"
+      opacity="0.35"
+    />
+
+  </g>
+
 </svg>

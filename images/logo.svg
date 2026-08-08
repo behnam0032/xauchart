@@ -1,0 +1,147 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 500 500"
+  width="500"
+  height="500"
+  fill="none"
+>
+  <defs>
+
+    <!-- Premium gold (هماهنگ با ابعاد جدید X) -->
+    <linearGradient
+      id="gold"
+      x1="58"
+      y1="20"
+      x2="442"
+      y2="318"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset="0" stop-color="#FFF3A0"/>
+      <stop offset="0.25" stop-color="#FFD84A"/>
+      <stop offset="0.55" stop-color="#EAB92C"/>
+      <stop offset="0.8" stop-color="#C99618"/>
+      <stop offset="1" stop-color="#F5D65A"/>
+    </linearGradient>
+
+    <!-- Dark metallic -->
+    <linearGradient
+      id="dark"
+      x1="58"
+      y1="25"
+      x2="442"
+      y2="318"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset="0" stop-color="#667085"/>
+      <stop offset="0.5" stop-color="#344054"/>
+      <stop offset="1" stop-color="#171B24"/>
+    </linearGradient>
+
+    <!-- گرادینت طلایی مخصوص متن (همان رنگ‌ها، هماهنگ با posisi متن) -->
+    <linearGradient
+      id="goldText"
+      x1="20"
+      y1="350"
+      x2="480"
+      y2="420"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset="0" stop-color="#FFF3A0"/>
+      <stop offset="0.25" stop-color="#FFD84A"/>
+      <stop offset="0.55" stop-color="#EAB92C"/>
+      <stop offset="0.8" stop-color="#C99618"/>
+      <stop offset="1" stop-color="#F5D65A"/>
+    </linearGradient>
+
+    <!-- Very subtle shadow -->
+    <filter
+      id="shadow"
+      x="-30%"
+      y="-30%"
+      width="160%"
+      height="160%"
+    >
+      <feDropShadow
+        dx="0"
+        dy="5"
+        stdDeviation="5"
+        flood-color="#f2ebeb"
+        flood-opacity="0.22"
+      />
+    </filter>
+
+  </defs>
+
+
+  <!-- ================================================= -->
+  <!-- X SYMBOL (MAXIMIZED) -->
+  <!-- ================================================= -->
+
+  <g filter="url(#shadow)">
+
+    <!-- Dark diagonal -->
+    <path
+      d="
+        M 58 20
+        L 145 20
+        L 442 318
+        L 355 318
+        Z
+      "
+      fill="url(#dark)"
+    />
+
+    <!-- Gold diagonal -->
+    <path
+      d="
+        M 355 20
+        L 442 20
+        L 145 318
+        L 58 318
+        Z
+      "
+      fill="url(#gold)"
+    />
+
+    <!-- Small precision cut -->
+    <path
+      d="M 61 316 L 361 18"
+      stroke="#111827"
+      stroke-width="5"
+      stroke-linecap="round"
+      opacity="0.35"
+    />
+
+  </g>
+
+
+  <!-- ================================================= -->
+  <!-- WORDMARK (ENLARGED) -->
+  <!-- ================================================= -->
+
+  <text
+    x="250"
+    y="418"
+    text-anchor="middle"
+    font-family="Inter, Montserrat, Arial, Helvetica, sans-serif"
+    font-size="92"
+    font-weight="700"
+    letter-spacing="-2"
+  >
+    <tspan fill="url(#goldText)">XAU</tspan><tspan fill="#F2F4F7">Chart</tspan>
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- SUBTLE BASELINE (FULL WIDTH) -->
+  <!-- ================================================= -->
+
+  <path
+    d="M 25 458 H 475"
+    stroke="#C9A227"
+    stroke-width="4"
+    opacity="0.55"
+    stroke-linecap="round"
+  />
+
+</svg>
