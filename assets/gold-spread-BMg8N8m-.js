@@ -1,4 +1,4 @@
-import{r as a,i as l,a as s}from"./clock-KWoeytII.js";/* empty css                */import{a as i,b as e}from"./seo-BHAbaErS.js";import{s as r}from"./anchor-copy-JqxzkbF8.js";document.getElementById("app").innerHTML=a("learn")+`
+import{r as a,i as l,a as s}from"./clock-DhvR3LIa.js";/* empty css                */import{a as i,b as e}from"./seo-BHAbaErS.js";import{s as r}from"./anchor-copy-JqxzkbF8.js";document.getElementById("app").innerHTML=a("learn")+`
 <main class="main">
   <article class="article-content">
     <header class="article-header">
