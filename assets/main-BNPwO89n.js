@@ -1,4 +1,4 @@
-import{r as m,i as u,a as h}from"./clock-CShfmQiI.js";/* empty css                */import{H as r,f as g}from"./api-BzjsYfuF.js";import{g as w,i as f}from"./calculator-BNxaeBxc.js";const b=a=>new Intl.NumberFormat("fa-IR").format(Math.round(a)),y=(a,s=2)=>new Intl.NumberFormat("en-US",{minimumFractionDigits:s,maximumFractionDigits:s}).format(a),$=(a,s)=>s==="دلار"?y(a,a<10?4:2):b(a);document.getElementById("app").innerHTML=m("home")+`
+import{r as m,i as u,a as h}from"./clock-DyX6SMzh.js";/* empty css                */import{H as r,f as g}from"./api-BzjsYfuF.js";import{g as w,i as f}from"./calculator-BNxaeBxc.js";const b=a=>new Intl.NumberFormat("fa-IR").format(Math.round(a)),y=(a,s=2)=>new Intl.NumberFormat("en-US",{minimumFractionDigits:s,maximumFractionDigits:s}).format(a),$=(a,s)=>s==="دلار"?y(a,a<10?4:2):b(a);document.getElementById("app").innerHTML=m("home")+`
 <main class="main">
   <!-- ساعت + سشن‌ها -->
   <div class="clock-bar">
@@ -31,7 +31,7 @@ import{r as m,i as u,a as h}from"./clock-CShfmQiI.js";/* empty css              
   <!-- سشن‌ها + ماشین‌حساب -->
   <div class="mid-row">
     <div class="panel">
-      <div class="panel-title">🕐 سشن‌های فارکس — UTC</div>
+      <div class="panel-title">🕐 سشن‌های فارکس (به وقت محلی)</div>
       <div id="sessRows"></div>
       <div class="sess-hint">بهترین زمان برای طلا: تداخل London × New York</div>
     </div>
