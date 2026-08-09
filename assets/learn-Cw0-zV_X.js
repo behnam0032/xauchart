@@ -1,4 +1,4 @@
-import{r as a,i as c,a as i}from"./clock-DyX6SMzh.js";/* empty css                */document.getElementById("app").innerHTML=a("learn")+`
+import{r as a,i as c,a as i}from"./clock-lsDXjRSo.js";/* empty css                */document.getElementById("app").innerHTML=a("learn")+`
 <main class="main">
   <div class="page-header">
     <h1>📚 آموزش فارکس و معاملات طلا</h1>
