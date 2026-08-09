@@ -1,4 +1,4 @@
-import{r as s,i as e,a as i}from"./clock-CBhO2AP9.js";document.getElementById("app").innerHTML=s("about")+`
+import{r as s,i as e,a as i}from"./clock-CShfmQiI.js";document.getElementById("app").innerHTML=s("about")+`
 <main class="main">
   <article class="article-content">
     <header class="article-header">

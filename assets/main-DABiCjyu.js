@@ -1,4 +1,4 @@
-import{r as m,i as u,a as h}from"./clock-CBhO2AP9.js";/* empty css                */import{H as r,f as g}from"./api-BzjsYfuF.js";import{g as w,i as f}from"./calculator-BNxaeBxc.js";const b=a=>new Intl.NumberFormat("fa-IR").format(Math.round(a)),y=(a,s=2)=>new Intl.NumberFormat("en-US",{minimumFractionDigits:s,maximumFractionDigits:s}).format(a),$=(a,s)=>s==="دلار"?y(a,a<10?4:2):b(a);document.getElementById("app").innerHTML=m("home")+`
+import{r as m,i as u,a as h}from"./clock-CShfmQiI.js";/* empty css                */import{H as r,f as g}from"./api-BzjsYfuF.js";import{g as w,i as f}from"./calculator-BNxaeBxc.js";const b=a=>new Intl.NumberFormat("fa-IR").format(Math.round(a)),y=(a,s=2)=>new Intl.NumberFormat("en-US",{minimumFractionDigits:s,maximumFractionDigits:s}).format(a),$=(a,s)=>s==="دلار"?y(a,a<10?4:2):b(a);document.getElementById("app").innerHTML=m("home")+`
 <main class="main">
   <!-- ساعت + سشن‌ها -->
   <div class="clock-bar">
@@ -10,7 +10,7 @@ import{r as m,i as u,a as h}from"./clock-CBhO2AP9.js";/* empty css              
   </div>
 
   <div class="weekend-banner" id="weekendBanner">
-    ⚠️ بازار فارکس آخر هفته (جمعه ۲۲:۰۰ تا یکشنبه ۲:۰۰ UTC) تعطیل است.
+    ⚠️ در حال دریافت زمان‌بندی محلی...
   </div>
 
   <div class="error-bar" id="errorBar">
