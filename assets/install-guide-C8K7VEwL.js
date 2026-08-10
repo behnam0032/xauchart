@@ -1,4 +1,4 @@
-import{r as s,i as o,a as t}from"./clock-lsDXjRSo.js";/* empty css                */document.getElementById("app").innerHTML=s("experts")+`
+import{r as s,i as o}from"./market-DaRiDYB7.js";/* empty css                */import{i as t}from"./clock-DmW530F7.js";document.getElementById("app").innerHTML=s("experts")+`
 <main class="main">
   <div class="page-header">
     <h1>📚 آموزش نصب اکسپرت در متاتریدر</h1>
@@ -137,4 +137,4 @@ import{r as s,i as o,a as t}from"./clock-lsDXjRSo.js";/* empty css              
     <a href="/experts" class="btn-read-more">← بازگشت به صفحه اکسپرت‌ها</a>
   </div>
 </main>
-`;o();t();
+`;t();o();

@@ -1,4 +1,4 @@
-import{r as s,i as a,a as i}from"./clock-lsDXjRSo.js";/* empty css                */import{s as e}from"./anchor-copy-JqxzkbF8.js";document.getElementById("app").innerHTML=s("experts")+`
+import{r as s,i as a}from"./market-DaRiDYB7.js";/* empty css                */import{i}from"./clock-DmW530F7.js";import{s as e}from"./anchor-copy-JqxzkbF8.js";document.getElementById("app").innerHTML=s("experts")+`
 <main class="main">
   <!-- Hero Section -->
   <div class="ea-hero">
@@ -328,4 +328,4 @@ import{r as s,i as a,a as i}from"./clock-lsDXjRSo.js";/* empty css              
     <a href="/experts" class="btn-read-more">← بازگشت به لیست اکسپرت‌ها</a>
   </div>
 </main>
-`;a();i();e();
+`;i();a();e();

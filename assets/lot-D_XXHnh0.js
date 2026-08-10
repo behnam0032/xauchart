@@ -1,4 +1,4 @@
-import{r as t,i as a,a as l}from"./clock-lsDXjRSo.js";/* empty css                */import{a as i,b as s}from"./seo-MNh0BtPU.js";import{s as e}from"./anchor-copy-JqxzkbF8.js";document.getElementById("app").innerHTML=t("learn")+`
+import{r as t,i as a}from"./market-DaRiDYB7.js";/* empty css                */import{i as l}from"./clock-DmW530F7.js";import{a as i,b as s}from"./seo-MNh0BtPU.js";import{s as e}from"./anchor-copy-JqxzkbF8.js";document.getElementById("app").innerHTML=t("learn")+`
 <main class="main">
   <article class="article-content">
     <header class="article-header">
@@ -263,4 +263,4 @@ import{r as t,i as a,a as l}from"./clock-lsDXjRSo.js";/* empty css              
     </div>
   </article>
 </main>
-`;a();l();e();i({headline:"لات در طلا چیست؟ آموزش کامل Lot Size و محاسبه حجم معامله",description:"آموزش کامل انواع لات، نحوه انتخاب حجم مناسب و تأثیر آن بر مدیریت سرمایه",datePublished:"2026-07-09"});s([{q:"آیا می‌توانم حجم کمتر از ۰.۰۱ لات معامله کنم؟",a:"برخی بروکرها حساب‌های Nano ارائه می‌دهند که اجازه معامله با ۰.۰۰۱ لات را می‌دهد. این برای تست استراتژی عالی است."},{q:"چرا بعد از انتخاب حجم، مارجین کافی ندارم؟",a:"مارجین به اهرم (Leverage) بستگی دارد. اگر اهرم ۱:۱۰۰ دارید و می‌خواهید  لات طلا معامله کنید، به حدود ۲,۳۴۰ دلار مارجین نیاز دارید."},{q:"آیا حجم معامله بر اسپرد تأثیر دارد؟",a:"خیر. اسپرد بر اساس پیپ محاسبه می‌شود و به حجم بستگی ندارد. اما هزینه کل اسپرد (به دلار) با افزایش حجم بیشتر می‌شود."}]);
+`;l();a();e();i({headline:"لات در طلا چیست؟ آموزش کامل Lot Size و محاسبه حجم معامله",description:"آموزش کامل انواع لات، نحوه انتخاب حجم مناسب و تأثیر آن بر مدیریت سرمایه",datePublished:"2026-07-09"});s([{q:"آیا می‌توانم حجم کمتر از ۰.۰۱ لات معامله کنم؟",a:"برخی بروکرها حساب‌های Nano ارائه می‌دهند که اجازه معامله با ۰.۰۰۱ لات را می‌دهد. این برای تست استراتژی عالی است."},{q:"چرا بعد از انتخاب حجم، مارجین کافی ندارم؟",a:"مارجین به اهرم (Leverage) بستگی دارد. اگر اهرم ۱:۱۰۰ دارید و می‌خواهید  لات طلا معامله کنید، به حدود ۲,۳۴۰ دلار مارجین نیاز دارید."},{q:"آیا حجم معامله بر اسپرد تأثیر دارد؟",a:"خیر. اسپرد بر اساس پیپ محاسبه می‌شود و به حجم بستگی ندارد. اما هزینه کل اسپرد (به دلار) با افزایش حجم بیشتر می‌شود."}]);

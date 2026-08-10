@@ -1,4 +1,4 @@
-import{r as m,i as u,a as h}from"./clock-lsDXjRSo.js";/* empty css                */import{H as r,f as g}from"./api-BzjsYfuF.js";import{g as w,i as f}from"./calculator-BNxaeBxc.js";const b=a=>new Intl.NumberFormat("fa-IR").format(Math.round(a)),y=(a,s=2)=>new Intl.NumberFormat("en-US",{minimumFractionDigits:s,maximumFractionDigits:s}).format(a),$=(a,s)=>s==="دلار"?y(a,a<10?4:2):b(a);document.getElementById("app").innerHTML=m("home")+`
+import{r as m,i as u}from"./market-DaRiDYB7.js";/* empty css                */import{i as h}from"./clock-DmW530F7.js";import{H as r,f as g}from"./api-BzjsYfuF.js";import{g as w,i as f}from"./calculator-BNxaeBxc.js";const b=i=>new Intl.NumberFormat("fa-IR").format(Math.round(i)),y=(i,s=2)=>new Intl.NumberFormat("en-US",{minimumFractionDigits:s,maximumFractionDigits:s}).format(i),$=(i,s)=>s==="دلار"?y(i,i<10?4:2):b(i);document.getElementById("app").innerHTML=m("home")+`
 <main class="main">
   <!-- ساعت + سشن‌ها -->
   <div class="clock-bar">
@@ -20,8 +20,8 @@ import{r as m,i as u,a as h}from"./clock-lsDXjRSo.js";/* empty css              
 
   <!-- قیمت‌ها -->
   <div class="prices-grid" id="pricesGrid">
-    ${[...r.gold,...r.currency,...r.crypto].map(a=>`
-      <div class="price-card loading" id="card-${a}">
+    ${[...r.gold,...r.currency,...r.crypto].map(i=>`
+      <div class="price-card loading" id="card-${i}">
         <div class="p-label">در حال بارگذاری...</div>
         <div class="p-val">—</div>
       </div>
@@ -83,9 +83,9 @@ import{r as m,i as u,a as h}from"./clock-lsDXjRSo.js";/* empty css              
     </div>
   </div>
 </main>
-`;u();h();f();async function n(){document.getElementById("errorBar").classList.remove("show");try{const a=await g();k(a)}catch(a){document.getElementById("errorMsg").textContent=a.message||"خطا در دریافت قیمت",document.getElementById("errorBar").classList.add("show")}}window._loadPrices=n;function k({gold:a,currency:s,crypto:d}){const c={};[...a,...s,...d].forEach(e=>{c[e.code]=e}),[...r.gold,...r.currency,...r.crypto].forEach(e=>{const t=document.getElementById(`card-${e}`);if(!t)return;const i=c[e];if(!i){t.classList.remove("loading"),t.innerHTML=`<div class="p-label">${e}</div><div class="p-val" style="font-size:13px;color:var(--muted)">داده موجود نیست</div>`;return}t.classList.remove("loading");const l=Math.abs(i.pct).toFixed(2),o=i.isUp?"+":"−",p=i.isUp?"▲":"▼",v=i.isUp?"up":"down";t.innerHTML=`
-      <div class="p-label">${i.icon} ${i.label}</div>
-      <div class="p-val">${$(i.price,i.unit)}<span class="p-unit"> ${i.unit}</span></div>
+`;h();u();f();async function n(){document.getElementById("errorBar").classList.remove("show");try{const i=await g();k(i)}catch(i){document.getElementById("errorMsg").textContent=i.message||"خطا در دریافت قیمت",document.getElementById("errorBar").classList.add("show")}}window._loadPrices=n;function k({gold:i,currency:s,crypto:d}){const c={};[...i,...s,...d].forEach(e=>{c[e.code]=e}),[...r.gold,...r.currency,...r.crypto].forEach(e=>{const t=document.getElementById(`card-${e}`);if(!t)return;const a=c[e];if(!a){t.classList.remove("loading"),t.innerHTML=`<div class="p-label">${e}</div><div class="p-val" style="font-size:13px;color:var(--muted)">داده موجود نیست</div>`;return}t.classList.remove("loading");const l=Math.abs(a.pct).toFixed(2),o=a.isUp?"+":"−",p=a.isUp?"▲":"▼",v=a.isUp?"up":"down";t.innerHTML=`
+      <div class="p-label">${a.icon} ${a.label}</div>
+      <div class="p-val">${$(a.price,a.unit)}<span class="p-unit"> ${a.unit}</span></div>
       <div class="p-change ${v}">${p} ${o}${l}%</div>
-      <div class="p-time">${i.time?"آپدیت: "+i.time:""}</div>
+      <div class="p-time">${a.time?"آپدیت: "+a.time:""}</div>
     `})}n();setInterval(n,3e4);

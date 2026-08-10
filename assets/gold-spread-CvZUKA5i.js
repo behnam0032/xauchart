@@ -1,4 +1,4 @@
-import{r as a,i as l,a as s}from"./clock-lsDXjRSo.js";/* empty css                */import{a as i,b as e}from"./seo-MNh0BtPU.js";import{s as r}from"./anchor-copy-JqxzkbF8.js";document.getElementById("app").innerHTML=a("learn")+`
+import{r as a,i as l}from"./market-DaRiDYB7.js";/* empty css                */import{i as s}from"./clock-DmW530F7.js";import{a as i,b as e}from"./seo-MNh0BtPU.js";import{s as r}from"./anchor-copy-JqxzkbF8.js";document.getElementById("app").innerHTML=a("learn")+`
 <main class="main">
   <article class="article-content">
     <header class="article-header">
@@ -152,4 +152,4 @@ import{r as a,i as l,a as s}from"./clock-lsDXjRSo.js";/* empty css              
     </div>
   </article>
 </main>
-`;l();s();r();i({headline:"اسپرد طلا چیست؟ آموزش کامل Spread در معاملات XAU/USD",description:"آموزش کامل اسپرد طلا، تفاوت اسپرد ثابت و شناور و نحوه کاهش هزینه معاملات",datePublished:"2026-07-29"});e([{q:"آیا اسپرد همیشه ثابت است؟",a:"خیر، در بیشتر بروکرها اسپرد شناور است و با شرایط بازار تغییر می‌کند."},{q:"آیا اسپرد روی حد سود تأثیر دارد؟",a:"بله، معامله ابتدا باید هزینه اسپرد را جبران کند."},{q:"بهترین زمان برای اسپرد پایین؟",a:"ساعات هم‌پوشانی سشن لندن و نیویورک."}]);
+`;s();l();r();i({headline:"اسپرد طلا چیست؟ آموزش کامل Spread در معاملات XAU/USD",description:"آموزش کامل اسپرد طلا، تفاوت اسپرد ثابت و شناور و نحوه کاهش هزینه معاملات",datePublished:"2026-07-29"});e([{q:"آیا اسپرد همیشه ثابت است؟",a:"خیر، در بیشتر بروکرها اسپرد شناور است و با شرایط بازار تغییر می‌کند."},{q:"آیا اسپرد روی حد سود تأثیر دارد؟",a:"بله، معامله ابتدا باید هزینه اسپرد را جبران کند."},{q:"بهترین زمان برای اسپرد پایین؟",a:"ساعات هم‌پوشانی سشن لندن و نیویورک."}]);

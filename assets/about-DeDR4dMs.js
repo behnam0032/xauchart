@@ -1,4 +1,4 @@
-import{r as s,i as e,a as i}from"./clock-lsDXjRSo.js";document.getElementById("app").innerHTML=s("about")+`
+import{r as s,i as e}from"./market-DaRiDYB7.js";import{i}from"./clock-DmW530F7.js";document.getElementById("app").innerHTML=s("about")+`
 <main class="main">
   <article class="article-content">
     <header class="article-header">
@@ -95,4 +95,4 @@ import{r as s,i as e,a as i}from"./clock-lsDXjRSo.js";document.getElementById("a
     </div>
   </article>
 </main>
-`;const n={"@context":"https://schema.org","@type":"Organization",name:"XAUChart",url:"https://xauchart.ir/",email:"info@xauchart.ir",description:"پلتفرمی برای ارائه ابزارها و اطلاعات کاربردی بازار طلا و XAUUSD و توسعه ابزارهای معاملاتی سفارشی.",logo:"https://xauchart.ir/images/logo.svg"},a=document.createElement("script");a.type="application/ld+json";a.textContent=JSON.stringify(n);document.head.appendChild(a);const o={"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"خانه",item:"https://xauchart.ir/"},{"@type":"ListItem",position:2,name:"درباره ما",item:"https://xauchart.ir/about"}]},t=document.createElement("script");t.type="application/ld+json";t.textContent=JSON.stringify(o);document.head.appendChild(t);e();i();
+`;const o={"@context":"https://schema.org","@type":"Organization",name:"XAUChart",url:"https://xauchart.ir/",email:"info@xauchart.ir",description:"پلتفرمی برای ارائه ابزارها و اطلاعات کاربردی بازار طلا و XAUUSD و توسعه ابزارهای معاملاتی سفارشی.",logo:"https://xauchart.ir/images/logo.svg"},a=document.createElement("script");a.type="application/ld+json";a.textContent=JSON.stringify(o);document.head.appendChild(a);const n={"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"خانه",item:"https://xauchart.ir/"},{"@type":"ListItem",position:2,name:"درباره ما",item:"https://xauchart.ir/about"}]},t=document.createElement("script");t.type="application/ld+json";t.textContent=JSON.stringify(n);document.head.appendChild(t);i();e();

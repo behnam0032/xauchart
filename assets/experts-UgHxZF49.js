@@ -1,4 +1,4 @@
-import{r as s,i,a as d}from"./clock-lsDXjRSo.js";/* empty css                */const t=[{id:"money-management",title:"مدیریت سرمایه هوشمند",titleEn:"Smart Money Management",badge:"RISK-BASED LOT SIZING · TRAILING (PIPS/%) · SPREAD LOCK · POSITION CAP",description:"محاسبه خودکار حجم معامله بر اساس ریسک درصد، تشخیص هوشمند جهت، رسم خودکار TP، تریلینگ با قفل تضمینی سود، محدودیت پوزیشن و قفل محافظتی اسپرد — همه در یک اکسپرت.",version:"1.0.0",mtVersion:"MT5 / MT4",page:"/money-management",features:["محاسبه Lot Size بر اساس ریسک %","تشخیص هوشمند BUY/SELL بر اساس موقعیت SL","رسم خودکار TP بر اساس R:R Ratio","پنل اطلاعات زنده روی چارت","دکمه‌های خرید و فروش مستقیم","تریلینگ استاپ با قفل تضمینی حداقل سود","محدودیت تعداد پوزیشن باز","قفل محافظتی اسپرد (طلا/فارکس/کریپتو)","پشتیبانی از واحد پیپ و درصد"]}];document.getElementById("app").innerHTML=s("experts")+`
+import{r as s,i}from"./market-DaRiDYB7.js";/* empty css                */import{i as t}from"./clock-DmW530F7.js";const d=[{id:"money-management",title:"مدیریت سرمایه هوشمند",titleEn:"Smart Money Management",badge:"RISK-BASED LOT SIZING · TRAILING (PIPS/%) · SPREAD LOCK · POSITION CAP",description:"محاسبه خودکار حجم معامله بر اساس ریسک درصد، تشخیص هوشمند جهت، رسم خودکار TP، تریلینگ با قفل تضمینی سود، محدودیت پوزیشن و قفل محافظتی اسپرد — همه در یک اکسپرت.",version:"1.0.0",mtVersion:"MT5 / MT4",page:"/money-management",features:["محاسبه Lot Size بر اساس ریسک %","تشخیص هوشمند BUY/SELL بر اساس موقعیت SL","رسم خودکار TP بر اساس R:R Ratio","پنل اطلاعات زنده روی چارت","دکمه‌های خرید و فروش مستقیم","تریلینگ استاپ با قفل تضمینی حداقل سود","محدودیت تعداد پوزیشن باز","قفل محافظتی اسپرد (طلا/فارکس/کریپتو)","پشتیبانی از واحد پیپ و درصد"]}];document.getElementById("app").innerHTML=s("experts")+`
 <main class="main">
   <div class="page-header">
     <h1>🤖 اکسپرت‌های معاملاتی</h1>
@@ -7,7 +7,7 @@ import{r as s,i,a as d}from"./clock-lsDXjRSo.js";/* empty css                */c
 
   <!-- لیست اکسپرت‌ها -->
   <div class="experts-list">
-    ${t.map(e=>`
+    ${d.map(e=>`
       <div class="expert-card">
         <div class="expert-header">
           <div class="expert-icon">🤖</div>
@@ -62,4 +62,4 @@ import{r as s,i,a as d}from"./clock-lsDXjRSo.js";/* empty css                */c
     <a href="/" class="btn-read-more">← بازگشت به صفحه اصلی</a>
   </div>
 </main>
-`;i();d();
+`;t();i();
