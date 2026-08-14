@@ -1,4 +1,4 @@
-import{r as m,i as u}from"./market-DaRiDYB7.js";/* empty css                */import{i as h}from"./clock-DmW530F7.js";import{H as r,f as g}from"./api-BzjsYfuF.js";import{g as w,i as f}from"./calculator-BNxaeBxc.js";const b=i=>new Intl.NumberFormat("fa-IR").format(Math.round(i)),y=(i,s=2)=>new Intl.NumberFormat("en-US",{minimumFractionDigits:s,maximumFractionDigits:s}).format(i),$=(i,s)=>s==="دلار"?y(i,i<10?4:2):b(i);document.getElementById("app").innerHTML=m("home")+`
+import{r as m,i as h}from"./market-DaRiDYB7.js";/* empty css                */import{i as g}from"./clock-DmW530F7.js";import{H as t,f as w}from"./api-BzjsYfuF.js";import{g as u,i as f}from"./calculator-BNxaeBxc.js";const b=i=>new Intl.NumberFormat("fa-IR").format(Math.round(i)),y=(i,e=2)=>new Intl.NumberFormat("en-US",{minimumFractionDigits:e,maximumFractionDigits:e}).format(i),k=(i,e)=>e==="دلار"?y(i,i<10?4:2):b(i);document.getElementById("app").innerHTML=m("home")+`
 <main class="main">
   <!-- ساعت + سشن‌ها -->
   <div class="clock-bar">
@@ -20,14 +20,28 @@ import{r as m,i as u}from"./market-DaRiDYB7.js";/* empty css                */im
 
   <!-- قیمت‌ها -->
   <div class="prices-grid" id="pricesGrid">
-    ${[...r.gold,...r.currency,...r.crypto].map(i=>`
+    ${[...t.gold,...t.currency,...t.crypto].map(i=>`
       <div class="price-card loading" id="card-${i}">
         <div class="p-label">در حال بارگذاری...</div>
         <div class="p-val">—</div>
       </div>
     `).join("")}
   </div>
-
+<!-- چارت طلا TradingView -->
+<section class="chart-section">
+  <div class="container">
+    <h2 class="chart-title"> چارت زنده طلا (XAU/USD)</h2>
+    <div class="tradingview-widget-container" id="tv-chart">
+      <div class="tradingview-widget-container__widget"></div>
+    </div>
+    <p class="chart-hint">
+      تحلیل تکنیکال طلا با ابزارهای حرفه‌ای TradingView | 
+      <a href="https://www.tradingview.com/symbols/XAUUSD/" target="_blank" rel="noopener">
+        مشاهده چارت کامل ↗
+      </a>
+    </p>
+  </div>
+</section>
   <!-- سشن‌ها + ماشین‌حساب -->
   <div class="mid-row">
     <div class="panel">
@@ -35,7 +49,7 @@ import{r as m,i as u}from"./market-DaRiDYB7.js";/* empty css                */im
       <div id="sessRows"></div>
       <div class="sess-hint">بهترین زمان برای طلا: تداخل London × New York</div>
     </div>
-    ${w()}
+    ${u()}
   </div>
 
   <!-- پیش‌نمایش مقالات آموزشی -->
@@ -83,9 +97,9 @@ import{r as m,i as u}from"./market-DaRiDYB7.js";/* empty css                */im
     </div>
   </div>
 </main>
-`;h();u();f();async function n(){document.getElementById("errorBar").classList.remove("show");try{const i=await g();k(i)}catch(i){document.getElementById("errorMsg").textContent=i.message||"خطا در دریافت قیمت",document.getElementById("errorBar").classList.add("show")}}window._loadPrices=n;function k({gold:i,currency:s,crypto:d}){const c={};[...i,...s,...d].forEach(e=>{c[e.code]=e}),[...r.gold,...r.currency,...r.crypto].forEach(e=>{const t=document.getElementById(`card-${e}`);if(!t)return;const a=c[e];if(!a){t.classList.remove("loading"),t.innerHTML=`<div class="p-label">${e}</div><div class="p-val" style="font-size:13px;color:var(--muted)">داده موجود نیست</div>`;return}t.classList.remove("loading");const l=Math.abs(a.pct).toFixed(2),o=a.isUp?"+":"−",p=a.isUp?"▲":"▼",v=a.isUp?"up":"down";t.innerHTML=`
+`;g();h();f();async function n(){document.getElementById("errorBar").classList.remove("show");try{const i=await w();$(i)}catch(i){document.getElementById("errorMsg").textContent=i.message||"خطا در دریافت قیمت",document.getElementById("errorBar").classList.add("show")}}window._loadPrices=n;function $({gold:i,currency:e,crypto:d}){const c={};[...i,...e,...d].forEach(s=>{c[s.code]=s}),[...t.gold,...t.currency,...t.crypto].forEach(s=>{const r=document.getElementById(`card-${s}`);if(!r)return;const a=c[s];if(!a){r.classList.remove("loading"),r.innerHTML=`<div class="p-label">${s}</div><div class="p-val" style="font-size:13px;color:var(--muted)">داده موجود نیست</div>`;return}r.classList.remove("loading");const o=Math.abs(a.pct).toFixed(2),l=a.isUp?"+":"−",p=a.isUp?"▲":"▼",v=a.isUp?"up":"down";r.innerHTML=`
       <div class="p-label">${a.icon} ${a.label}</div>
-      <div class="p-val">${$(a.price,a.unit)}<span class="p-unit"> ${a.unit}</span></div>
-      <div class="p-change ${v}">${p} ${o}${l}%</div>
+      <div class="p-val">${k(a.price,a.unit)}<span class="p-unit"> ${a.unit}</span></div>
+      <div class="p-change ${v}">${p} ${l}${o}%</div>
       <div class="p-time">${a.time?"آپدیت: "+a.time:""}</div>
-    `})}n();setInterval(n,3e4);
+    `})}n();setInterval(n,3e4);function x(){const i=document.getElementById("tv-chart");if(!i)return;const e=document.createElement("script");e.src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js",e.async=!0,e.type="text/javascript",e.textContent=JSON.stringify({autosize:!0,symbol:"OANDA:XAUUSD",interval:"60",timezone:"Asia/Tehran",theme:"dark",style:"1",locale:"fa",backgroundColor:"rgba(12, 12, 16, 1)",gridColor:"rgba(42, 46, 57, 0.3)",hide_top_toolbar:!1,hide_legend:!1,save_image:!1,calendar:!1,hide_volume:!1,support_host:"https://www.tradingview.com",width:"100%",height:"500"}),i.appendChild(e)}setTimeout(x,1500);
